@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sidebar Navigation</title>
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+
+        /* body */
+        body{
+            margin:0;
+            background:#0f0f0f;
+            font-family:sans-serif;
+        }
+
+        /* sidebar */
+        .sidebar{
+            position:fixed;
+            left:0;
+            top:0;
+            height:100vh;
+            width:70px;
+            background:#111;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding-top:20px;
+            transition:0.4s;
+        }
+
+        /* expand */
+        .sidebar:hover{
+            width:220px;
+        }
+
+        /* nav items */
+        .nav-item{
+            width:100%;
+            display:flex;
+            align-items:center;
+            padding:15px;
+            color:white;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        /* icons */
+        .nav-item i{
+            font-size:20px;
+            min-width:40px;
+            text-align:center;
+        }
+
+        /* text */
+        .nav-item span{
+            opacity:0;
+            white-space:nowrap;
+            transition:0.3s;
+            transform: translateX(-10px);
+        }
+
+        /* show text */
+        .sidebar:hover .nav-item span{
+            opacity:1;
+            margin-left:10px;
+            transform: translateX(0);
+        }
+
+        /* hover effect */
+        .nav-item:hover{
+            background:#222;
+        }
+
+        /* glow effect */
+        .nav-item:hover i{
+            color:red;
+            text-shadow:0 0 10px red;
+        }
+
+        /* glass effect */
+        .sidebar{
+            backdrop-filter: blur(10px);
+            background: rgba(20,20,20,0.85);
+        }
+
+        /* active item */
+        .nav-item.active{
+            background:#1a1a1a;
+            border-left:3px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="nav-item active">
+        <i class="fas fa-plus"></i>
+        <span>New Chat</span>
+    </div>
+
+    <div class="nav-item">
+        <i class="fas fa-search"></i>
+        <span>Search</span>
+    </div>
+
+    <div class="nav-item">
+        <i class="fas fa-image"></i>
+        <span>Images</span>
+    </div>
+
+    <div class="nav-item">
+        <i class="fas fa-code"></i>
+        <span>Projects</span>
+    </div>
+
+    <div class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+    </div>
+
+</div>
+
+</body>
+</html>
+```

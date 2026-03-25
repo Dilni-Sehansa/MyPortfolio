@@ -8,142 +8,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Overflow</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="MyPortfolio/assets/lib/normalize.css">
+    <link rel="stylesheet" href="MyPortfolio/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Kablammo&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background: #00061A;
-            margin: 0;
-        }
-
-        #nav > div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #000927;
-            border-bottom: 1px solid whitesmoke;
-            padding: 10px 20px;
-            position: relative;
-        }
-
-        #desktop-nav {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 15px;
-        }
-
-        nav > a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .logo-name {
-            color: deepskyblue;
-            font-weight: bold;
-        }
-
-        #darkMode {
-            cursor: pointer;
-        }
-
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-
-        .bar {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            border-radius: 5px;
-        }
-
-
-        @media (max-width: 992px) {
-
-            #desktop-nav {
-                display: none;
-            }
-
-            .menu-toggle {
-                display: flex;
-            }
-        }
-
-        #home {
-            color: white;
-            padding: 150px 120px 150px 120px;
-            font-size: 50px;
-            font-weight: bold;
-            font-family: "Space Grotesk", sans-serif;
-            letter-spacing: 5px;
-
-        }
-
-        #photoHome{
-            border-radius: 50%;
-            width: 380px;
-            height: 380px;
-            background: deepskyblue;
-            right: 120px;
-            top: 150px ;
-            position: absolute;
-            overflow: hidden;
-            border: 5px solid deepskyblue;
-            box-shadow: 0px 0px 20px 0px blue;
-        }
-    </style>
 </head>
 <body>
-<!--/////////////////////////Nav//////////////////////////////////////////////////-->
-<section id="nav">
-    <div>
-        <div class="logo-name">DILNI SEHANSA</div>
 
-        <nav id="desktop-nav">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Projects</a>
-            <a href="">Gallery</a>
-            <a href="">Contact</a>
-            <img src="MyPortfolio/assets/moon.png" id="darkMode" alt="dark mode icon" width="30" height="30">
-        </nav>
+<header id="nav-top">
+    <div class="logo">Dilni Sehansa</div>
+    <nav id="desktop-nav">
+        <a href="index.html" class="nav-item">HOME </a>
+        <a href="MyPortfolio/about.html" class="nav-item">ABOUT</a>
+        <a href="MyPortfolio/project.html" class="nav-item">PROJECT</a>
+        <a href="MyPortfolio/contact.html" class="nav-item">CONTACT</a>
+<!--        <i class="fa-solid fa-sun" style="color: rgb(0, 204, 255);"></i>-->
+    </nav>
+</header>
+<!--<div class="menu-toggle" id="mobile-menu"><i class="fa-sharp fa-regular fa-bars" style="color: rgb(255, 255, 255);"></i></div>-->
 
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </div>
+
+<nav id="nav-side">
+    <ul>
+        <div class="line"></div>
+        <li><a href="#home" class="nav-dot active" data-title="Home"><i class="fa-solid fa-house" style="color: rgb(5, 76, 134);"></i></a></li>
+        <li><a href="#about" class="nav-dot" data-title="About"><i class="fa-solid fa-circle-info" style="color: rgb(5, 76, 134);"></i></a></li>
+        <li><a href="#project" class="nav-dot" data-title="Project"><i class="fa-solid fa-p" style="color: rgb(5, 76, 134);"></i></a></li>
+        <li><a href="#gallery" class="nav-dot" data-title="Gallery"><i class="fa-solid fa-photo-film" style="color: rgb(5, 76, 134);"></i></a></li>
+        <li><a href="#contact" class="nav-dot" data-title="Contact"><i class="fa-solid fa-address-book" style="color: rgb(5, 76, 134);"></i></a></li>
+    </ul>
+</nav>
+
+<section id="home" class="content-section">
+    <h1>Home Section</h1>
 </section>
 
 
-<!--///////////////////////////////////Home//////////////////////////////////////-->
-
-
-<section id="home">
-    <div id="textHome">
-        <div>Decoding Problems.</div>
-        <div>Encoding Solutions</div>
-    </div>
-
-    <div id="photoHome"><img src="MyPortfolio/assets/homephoto.png" width="100%" height="100%"></div>
-
-
-    <div></div>
+<section id="about" class="content-section">
+    <h1>About Section</h1>
 </section>
 
+<section id="project" class="content-section">
+    <h1>Projects</h1>
+</section>
 
+<section id="gallery" class="content-section">
+    <h1>Gallery</h1>
+</section>
+
+<section id="contact" class="content-section">
+    <h1>Contact Me</h1>
+</section>
 
 </body>
 </html>
