@@ -19,16 +19,18 @@
 <body>
 
 <header id="nav-top">
-    <div class="logo">Dilni Sehansa</div>
+    <div id="logo">Dilni Sehansa</div>
     <nav id="desktop-nav">
         <a href="index.html" class="nav-item">HOME </a>
         <a href="MyPortfolio/about.html" class="nav-item">ABOUT</a>
         <a href="MyPortfolio/project.html" class="nav-item">PROJECT</a>
         <a href="MyPortfolio/contact.html" class="nav-item">CONTACT</a>
-<!--        <i class="fa-solid fa-sun" style="color: rgb(0, 204, 255);"></i>-->
+        <!--        <i class="fa-solid fa-sun" style="color: rgb(0, 204, 255);"></i>-->
+        <div class="menu-toggle" id="mobile-menu"><img src="MyPortfolio/assets/menu.png"></div>
     </nav>
+
+
 </header>
-<div class="menu-toggle" id="mobile-menu"><i class="fa-sharp fa-regular fa-bars" style="color: rgb(255, 255, 255);"></i></div>
 
 
 <nav id="nav-side">
@@ -61,10 +63,10 @@
             connect!</div>
         <div id="hbutton">
             <div  class="buttonHome">
-                <div id="projectButton">PROJECT</div>
+                <a href="#project" id="projectButton" class="bu">PROJECT</a>
             </div>
             <div  class="buttonHome">
-                <div id="contactButton">CONTACT</div>
+                <a href="#contact" id="contactButton" class="bu">CONTACT</a>
             </div>
         </div>
     </div>
@@ -87,9 +89,22 @@
 
 <section id="project" class="content-section">
     <div class="topic">My Projects</div>
-    <div id="project01" class="projects"></div>
-    <div id="project02" class="projects"></div>
-    <div id="project03" class="projects"></div>
+    <div id="myProject">
+        <div id="project01" class="projects">
+            <div></div>
+            <div>Inventory System</div>
+        </div>
+
+        <div id="project02" class="projects">
+            <div></div>
+            <div>Connect-four-game</div>
+        </div>
+
+        <div id="project03" class="projects">
+            <div></div>
+            <div>Bookshop MS</div>
+        </div>
+    </div>
 
 </section>
 

@@ -21,15 +21,84 @@ body {
     z-index: 1000;
     box-sizing: border-box;
 }
+#desktop-nav {
+    display: flex;
+    align-items: center;
+}
+.menu-toggle{
+    margin-left: 30px;
+    cursor: pointer;
+    /*display: none;*/
+}
 
-@media all and (max-width: 800px) {
-    #nav-top > nav{
-        opacity: 0;
+.menu-toggle > img{
+    width: 35px;
+    height: auto;
+}
+
+/*desktop*/
+@media all and (min-width: 1025px) {
+    .nav-item{
+        opacity: 1;
+
     }
-    .menu-toggle {
-        display: flex;
+    .menu-toggle > img{
+        opacity: 0;
+        display: none;
+    }
+    #main-pic{
+        height: 350px;
+        aspect-ratio: 1 / 1;
+        border: 5px solid #00CCFF;
+    }
+    #textHome{
+        font-size: 45px;
     }
 }
+
+/*tab*/
+@media all and (min-width: 480px) and  (max-width: 1024px) {
+    .nav-item{
+        opacity: 0;
+        display: none;
+    }
+    .menu-toggle > img{
+        opacity: 1;
+    }
+
+    #main-pic{
+        height: 300px;
+        aspect-ratio: 1 / 1;
+        border: 3px solid #00CCFF;
+    }
+    #textHome{
+        font-size: 35px;
+    }
+}
+
+
+/*phone*/
+@media all and (max-width: 480px) {
+    .nav-item{
+        opacity: 0;
+        display: none;
+    }
+    .menu-toggle > img{
+        opacity: 1;
+    }
+    #home{
+        flex-direction: column;
+    }
+    #main-pic{
+        height: 250px;
+        aspect-ratio: 1 / 1;
+        border: 2px solid #00CCFF;
+    }
+    #textHome{
+        font-size: 25px;
+    }
+}
+
 
 /*top-name*/
 .logo {
@@ -136,13 +205,10 @@ body {
 
 /*home-photo*/
 #main-pic{
-    height: 350px;
-    width: 350px;
     border-radius: 50%;
     background-color: whitesmoke;
     background-size: cover;
     background-position: center;
-    border: 5px solid #00CCFF;
     z-index: 100;
     background-image: url("assets/homephoto.png");
     position: relative;
@@ -151,7 +217,6 @@ body {
 /*home-text*/
 #textHome{
     color: white;
-    font-size: 45px;
     font-weight: bold;
     font-family: "Iosevka Charon", monospace;
 
@@ -199,6 +264,7 @@ body {
     gap: 15px;
     margin-top: 20px;
 
+
 }
 .buttonHome{
     background-color: #00D2FF;
@@ -211,6 +277,10 @@ body {
     cursor: pointer;
     transition: 0.3s;
 
+
+}
+.bu{
+    text-decoration: none;
 }
 #about{
     display: flex;
@@ -234,4 +304,34 @@ body {
 #aboutme{
     max-width: 800px;
     line-height: 1.8;
+}
+
+#myProject {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    margin-top: 50px;
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 80px 10%;
+    height: auto;
+    min-height: 100vh;
+}
+.projects{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid #00D2FF;
+    justify-content: space-between;
+    margin: 20px;
+    flex-direction: row;
 }
