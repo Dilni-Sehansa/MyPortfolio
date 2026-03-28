@@ -21,10 +21,12 @@ body {
     z-index: 1000;
     box-sizing: border-box;
 }
+
 #desktop-nav {
     display: flex;
     align-items: center;
 }
+
 .menu-toggle{
     margin-left: 30px;
     cursor: pointer;
@@ -42,23 +44,29 @@ body {
         opacity: 1;
 
     }
+
     .menu-toggle > img{
         opacity: 0;
         display: none;
     }
+
     #main-pic{
         height: 350px;
         aspect-ratio: 1 / 1;
         border: 5px solid #00CCFF;
     }
+
     #textHome{
         font-size: 45px;
     }
+
     #home {
         padding: 0 10%;
         flex-direction: row;
         justify-content: space-around;
+        margin-top: 30px;
     }
+
     /*side-nav*/
     #nav-side {
         position: fixed;
@@ -89,6 +97,38 @@ body {
         z-index: -1;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    #home2{
+        flex-direction: row;
+        gap: 40px;
+        padding: 100px 7%;
+        margin-top: 50px;
+
+    }
+
+    .name{
+        font-size: 35px;
+    }
+
+    #me{
+        font-size: 20px;
+    }
+
+    #robo-pic{
+        width: 500px;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    #details{
+        margin-bottom: 100px;
+        margin-left: 100px;
+    }
+
+    .buttonHome{
+        width: 150px;
+        height: 40px;
     }
 }
 
@@ -98,6 +138,7 @@ body {
         opacity: 0;
         display: none;
     }
+
     .menu-toggle > img{
         opacity: 1;
     }
@@ -107,9 +148,11 @@ body {
         aspect-ratio: 1 / 1;
         border: 3px solid #00CCFF;
     }
+
     #textHome{
         font-size: 35px;
     }
+
     #home {
         flex-direction: row;
         text-align: center;
@@ -119,6 +162,7 @@ body {
         padding: 100px 7%;
 
     }
+
     /*side-nav*/
     #nav-side {
         position: fixed;
@@ -152,8 +196,47 @@ body {
         transform: translateX(-50%);
 
     }
-}
 
+    #home2{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+
+    }
+
+    #gdse{
+        font-size: 15px;
+    }
+
+    #name2{
+        font-size: 35px;
+
+
+    }
+
+    .name{
+        font-size: 35px;
+    }
+
+    #me{
+        font-size: 20px;
+    }
+
+    #robo-pic{
+        width: 400px;
+        height: 300px;
+    }
+
+    #details{
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    .buttonHome{
+        width: 150px;
+        height: 40px;
+    }
+}
 
 /*phone*/
 @media all and (max-width: 480px) {
@@ -161,23 +244,28 @@ body {
         opacity: 0;
         display: none;
     }
+
     .menu-toggle > img{
         opacity: 1;
     }
+
     #home{
         flex-direction: column;
     }
+
     #main-pic{
         height: 250px;
         aspect-ratio: 1 / 1;
         border: 2px solid #00CCFF;
         margin: 0 auto;
     }
+
     #textHome{
         font-size: 28px;
         margin-bottom: 5px;
         text-align: center;
     }
+
     #home {
         flex-direction: column;
         text-align: center;
@@ -186,7 +274,9 @@ body {
         padding: 90px 10px 20px 10px;
         gap: 15px;
 
+
     }
+
     #nav-side {
         position: fixed;
         left: 40px;
@@ -219,8 +309,48 @@ body {
         transform: translateX(-50%);
 
     }
-}
 
+    #home2{
+        flex-direction: column;
+
+    }
+
+    #gdse{
+        font-size: 13px;
+    }
+
+    #name2{
+        font-size: 20px;
+    }
+
+    .name{
+        font-size: 20px;
+    }
+
+    #me{
+        font-size: 14.5px;
+        max-width: 300px;
+    }
+
+    #robo-pic{
+        width: 100px;
+        height: 200px;
+        margin-right: 350px;
+
+
+    }
+
+    #details{
+        margin-left: 170px;
+        margin-top: 50px;
+    }
+
+    .buttonHome{
+        width: 125px;
+        height: 35px;
+    }
+
+}
 
 /*top-name*/
 .logo {
@@ -230,6 +360,7 @@ body {
     font-family: "Boldonse", system-ui, "Fjalla One", sans-serif;
 
 }
+
 /*top-nav*/
 .nav-item {
     color: white;
@@ -244,8 +375,6 @@ body {
 .nav-item:hover {
     color: #00CCFF;
 }
-
-
 
 /*side-nav-dot*/
 .nav-dot {
@@ -291,6 +420,7 @@ body {
 #home {
     display: flex;
     align-items: center;
+
 }
 
 /*home-photo*/
@@ -311,43 +441,40 @@ body {
     font-family: "Iosevka Charon", monospace;
 
 }
+
 #robo-pic {
-    width: 500px;
-    height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
 }
 
 #details {
-    margin-left: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     max-width: 500px
 }
 
 #home2 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 100px 10% 50px 10%;
-    margin-top: -100px;
+    justify-content: center;
+    height: auto;
+    padding: 0 20% 20px 0;
+    gap: 15px;
+    margin-top: 50px;
+
 
 }
+
 #gdse{
     color: #00D2FF;
 }
+
 #name2{
     color: #00D2FF;
 }
-.name{
-    font-size: 35px;
-}
-#me{
-    font-size: 20px;
-}
+
 #hbutton{
     display: flex;
     flex-direction: row;
@@ -356,10 +483,9 @@ body {
 
 
 }
+
 .buttonHome{
     background-color: #00D2FF;
-    width: 150px;
-    height: 40px;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -369,9 +495,11 @@ body {
 
 
 }
+
 .bu{
     text-decoration: none;
 }
+
 #about{
     display: flex;
     flex-direction: column;
@@ -384,6 +512,7 @@ body {
     /*max-width: 500px;*/
 
 }
+
 .topic{
     font-size: 32px;
     font-weight: bold;
@@ -391,6 +520,7 @@ body {
     margin-bottom: 30px;
 
 }
+
 #aboutme{
     max-width: 800px;
     line-height: 1.8;
@@ -405,6 +535,7 @@ body {
     width: 100%;
     margin-top: 50px;
 }
+
 #project{
     display: flex;
     flex-direction: column;
@@ -415,6 +546,7 @@ body {
     height: auto;
     min-height: 100vh;
 }
+
 .projects{
     width: 250px;
     height: 250px;
