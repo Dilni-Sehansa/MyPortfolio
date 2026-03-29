@@ -467,19 +467,22 @@ body {
     flex-direction: row;
     gap: 15px;
     margin-top: 20px;
-
-
 }
 .buttonHome{
-    background-color: #00D2FF;
+    background-color: #00061A;
+    border: 1px solid #00D2FF;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 0.3s;
-
-
+ }
+#projectButton{
+    color: #00D2FF;
+}
+#contactButton{
+    color: #00D2FF;
 }
 .bu{
     text-decoration: none;
@@ -497,7 +500,7 @@ body {
     width: 300px;
     height: 250px;
     border-radius: 10px;
-    background-color: black;
+    background-color: #00061A;
     border: 1px solid #00D2FF;
     justify-content: space-between;
     margin: 20px;
@@ -507,7 +510,7 @@ body {
     width: 300px;
     height: 250px;
     border-radius: 10px;
-    background-color: black;
+    background-color: #00061A;
     border: 1px solid #00D2FF;
     justify-content: space-between;
     margin: 20px;
@@ -593,21 +596,31 @@ body {
 .buttonAP{
     width: 270px;
     height: 30px;
-    background-color: #00D2FF;
+    background-color: #00061A;
     border-radius: 8px;
+    border: 1px solid #00D2FF;
     margin-bottom: 0;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
-#assignmentImg{
-    background-image: url("../MyPortfolio/assets/assignmentImg.png");
-    width: 270px;
-    height: 160px;
-    margin-left: 15px;
-    margin-top: 20px;
-    background-size: cover;
-    background-position: center;
-}
+/*#assignmentImg{*/
+/*    background-image: url("../MyPortfolio/assets/assignmentImg.png");*/
+/*    width: 270px;*/
+/*    height: 160px;*/
+/*    margin-left: 15px;*/
+/*    margin-top: 20px;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+/*#projectImg{*/
+/*    background-image: url("../MyPortfolio/assets/projectpic.png");*/
+/*    width: 270px;*/
+/*    height: 160px;*/
+/*    margin-left: 15px;*/
+/*    margin-top: 20px;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
 
 /*#assignmentImg{*/
 /*    background-image: url("../MyPortfolio/assets/assignment.jpg");*/
@@ -630,13 +643,34 @@ body {
 /*}*/
 
 #projectImg{
-    background-image: url("../MyPortfolio/assets/projectpic.png");
-    width: 270px;
-    height: 160px;
-    margin-left: 15px;
+    background-image: url("../MyPortfolio/assets/p.png");
+    width: 130px;
+    height: 130px;
+    margin-left: 90px;
     margin-top: 20px;
     background-size: cover;
     background-position: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    background-repeat: no-repeat;
+}
+
+#assignmentImg{
+    background-image: url("../MyPortfolio/assets/pimg.png");
+    width: 130px;
+    height: 130px;
+    margin-left: 90px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    background-repeat: no-repeat;
+
+
+
 }
 .card{
     display: flex;
@@ -660,28 +694,30 @@ body {
     margin-top: 100px;
 }
 #gallery{
-    align-items: flex-start;
+    flex-direction: column;
     margin-top: 200px;
     height: auto;
+    align-items: center;
 
 }
-.photo{
-    margin-top: 150px;
-}
+/*beach*/
 #photo1{
     width: 250px;
     height: 250px;
     background-color: #00D2FF;
     background-image: url("../MyPortfolio/assets/photo1.jpeg");
     background-size: cover;
-   background-position: center;
-   z-index: 100;
+    background-position: center;
+    z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
+
 }
+/*main*/
 #photo2{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 370px;
     background-color: #00D2FF;
     background-image: url("../MyPortfolio/assets/photo2.jpeg");
     background-size: cover;
@@ -689,7 +725,9 @@ body {
     z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
 }
+/*doa*/
 #photo3{
     width: 250px;
     height: 250px;
@@ -700,7 +738,9 @@ body {
     z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
 }
+/*park*/
 #photo4{
     width: 250px;
     height: 250px;
@@ -711,7 +751,9 @@ body {
     z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
 }
+/*birthday*/
 #photo5{
     width: 250px;
     height: 250px;
@@ -722,7 +764,9 @@ body {
     z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
 }
+/*sithum*/
 #photo6{
     width: 250px;
     height: 250px;
@@ -733,7 +777,10 @@ body {
     z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
 }
+
+/*all*/
 #photo7{
     width: 250px;
     height: 250px;
@@ -744,7 +791,9 @@ body {
     z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
 }
+/*dinshini*/
 #photo8{
     width: 250px;
     height: 250px;
@@ -755,7 +804,9 @@ body {
     z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
 }
+/*dihini*/
 #photo9{
     width: 250px;
     height: 250px;
@@ -766,4 +817,5 @@ body {
     z-index: 100;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
 }
