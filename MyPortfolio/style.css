@@ -109,6 +109,95 @@ body {
         width: 60px;
         height: 60px;
     }
+
+    /*all*/
+    #photo1{
+        width: 230px;
+        height: 200px;
+        margin-left: 10px;
+
+
+
+    }
+    /*main*/
+    #photo2{
+        width: 250px;
+        height: 320px;
+        margin-top: -260px;
+
+
+    }
+    /*birthday*/
+    #photo3{
+        width: 230px;
+        height: 200px;
+        margin-top: -500px;
+        margin-left: 10px;
+
+
+    }
+    /*park*/
+    #photo4{
+        width: 200px;
+        height: 200px;
+        margin-top: 380px;
+        margin-left: 30px;
+
+
+    }
+    /*batch*/
+    #photo5{
+        width: 170px;
+        height: 170px;
+        margin-top: 180px;
+        margin-left: 20px;
+
+
+
+    }
+    /*sithum*/
+    #photo6{
+        width: 170px;
+        height: 170px;
+        margin-top: 180px;
+        margin-left: 60px;
+
+
+    }
+    /*beach*/
+    #photo7{
+        width: 170px;
+        height: 170px;
+        margin-top: -550px;
+        margin-left: 20px;
+
+
+
+    }
+    /*dinshini*/
+    #photo8{
+        width: 200px;
+        height: 200px;
+        margin-top: -200px;
+        margin-left: 20px;
+
+
+    }
+    /*dihini*/
+    #photo9{
+        width: 170px;
+        height: 170px;
+        margin-top: -550px;
+        margin-left: 60px;
+
+
+    }
+    #photoSection{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0 100px 0 100px;
+    }
 }
 
 /*tab*/
@@ -187,6 +276,95 @@ body {
     .tech-card{
         width: 60px;
         height: 60px;
+    }
+
+    /*all*/
+    #photo1{
+        width: 230px;
+        height: 200px;
+        margin-left: 10px;
+
+
+
+    }
+    /*main*/
+    #photo2{
+        width: 250px;
+        height: 320px;
+        margin-top: -260px;
+
+
+    }
+    /*birthday*/
+    #photo3{
+        width: 230px;
+        height: 200px;
+        margin-top: -500px;
+        margin-left: 10px;
+
+
+    }
+    /*park*/
+    #photo4{
+        width: 200px;
+        height: 200px;
+        margin-top: 380px;
+        margin-left: 30px;
+
+
+    }
+    /*batch*/
+    #photo5{
+        width: 170px;
+        height: 170px;
+        margin-top: 180px;
+        margin-left: 20px;
+
+
+
+    }
+    /*sithum*/
+    #photo6{
+        width: 170px;
+        height: 170px;
+        margin-top: 180px;
+        margin-left: 60px;
+
+
+    }
+    /*beach*/
+    #photo7{
+        width: 170px;
+        height: 170px;
+        margin-top: -550px;
+        margin-left: 20px;
+
+
+
+    }
+    /*dinshini*/
+    #photo8{
+        width: 200px;
+        height: 200px;
+        margin-top: -200px;
+        margin-left: 20px;
+
+
+    }
+    /*dihini*/
+    #photo9{
+        width: 170px;
+        height: 170px;
+        margin-top: -550px;
+        margin-left: 60px;
+
+
+    }
+    #photoSection{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0 100px 0 100px;
     }
 }
 
@@ -320,6 +498,97 @@ body {
     }
     .card{
         width: 100%;
+    }
+
+    /*all*/
+    #photo1{
+        width: 250px;
+        height: 250px;
+
+
+
+
+
+    }
+    /*main*/
+    #photo2{
+        width: 250px;
+        height: 250px;
+
+
+
+
+    }
+    /*birthday*/
+    #photo3{
+        width: 250px;
+        height: 250px;
+
+
+
+
+    }
+    /*park*/
+    #photo4{
+        width: 250px;
+        height: 250px;
+
+
+
+
+
+    }
+    /*batch*/
+    #photo5{
+        width: 250px;
+        height: 250px;
+
+
+
+
+
+    }
+    /*sithum*/
+    #photo6{
+        width: 250px;
+        height: 250px;
+
+
+
+
+    }
+    /*beach*/
+    #photo7{
+        width: 250px;
+        height: 250px;
+
+
+
+
+
+    }
+    /*dinshini*/
+    #photo8{
+        width: 250px;
+        height: 250px;
+
+
+
+
+    }
+    /*dihini*/
+    #photo9{
+        width: 250px;
+        height: 250px;
+
+
+
+    }
+    #photoSection{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
     }
 }
 /*top-name*/
@@ -695,95 +964,14 @@ body {
 }
 #gallery{
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
     height: auto;
     align-items: center;
 
 }
-/*beach*/
-#photo1{
-    width: 250px;
-    height: 250px;
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo1.jpeg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-
-}
-/*main*/
-#photo2{
-    width: 300px;
-    height: 370px;
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo2.jpeg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-}
-/*doa*/
-#photo3{
-    width: 250px;
-    height: 250px;
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo3.jpeg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-}
-/*park*/
-#photo4{
-    width: 250px;
-    height: 250px;
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo4.jpeg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-}
-/*birthday*/
-#photo5{
-    width: 250px;
-    height: 250px;
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo5.jpeg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-}
-/*sithum*/
-#photo6{
-    width: 250px;
-    height: 250px;
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo6.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-}
 
 /*all*/
-#photo7{
-    width: 250px;
-    height: 250px;
+#photo1{
     background-color: #00D2FF;
     background-image: url("../MyPortfolio/assets/photo7.jpeg");
     background-size: cover;
@@ -792,11 +980,128 @@ body {
     align-items: center;
     position: relative;
     background-repeat: no-repeat;
+    margin-top: 100px;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+
+
+
+}
+/*main*/
+#photo2{
+
+    background-color: #00D2FF;
+    background-image: url("../MyPortfolio/assets/photo2.jpeg");
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+
+
+}
+/*birthday*/
+#photo3{
+
+    background-color: #00D2FF;
+    background-image: url("../MyPortfolio/assets/photo5.jpeg");
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+
+
+}
+/*park*/
+#photo4{
+
+    background-color: #00D2FF;
+    background-image: url("../MyPortfolio/assets/photo4.jpeg");
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2 ;
+
+
+
+}
+/*batch*/
+#photo5{
+
+    background-color: #00D2FF;
+    background-image: url("../MyPortfolio/assets/batch.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+
+
+
+}
+/*sithum*/
+#photo6{
+
+    background-color: #00D2FF;
+    background-image: url("../MyPortfolio/assets/photo6.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+
+
+}
+/*beach*/
+#photo7{
+
+    background-color: #00D2FF;
+    background-image: url("../MyPortfolio/assets/photo1.jpeg");
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+
+
+
+
 }
 /*dinshini*/
 #photo8{
-    width: 250px;
-    height: 250px;
+
     background-color: #00D2FF;
     background-image: url("../MyPortfolio/assets/photo8.jpg");
     background-size: cover;
@@ -805,11 +1110,16 @@ body {
     align-items: center;
     position: relative;
     background-repeat: no-repeat;
+    border-radius: 5px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+
+
 }
 /*dihini*/
 #photo9{
-    width: 250px;
-    height: 250px;
+
     background-color: #00D2FF;
     background-image: url("../MyPortfolio/assets/photo9.jpg");
     background-size: cover;
@@ -818,4 +1128,10 @@ body {
     align-items: center;
     position: relative;
     background-repeat: no-repeat;
+    border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+
+
 }
