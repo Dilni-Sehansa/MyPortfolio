@@ -477,7 +477,7 @@ body {
 .bu{
     text-decoration: none;
 }
-#myProject {
+#myProjectAndAssignment {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -486,7 +486,7 @@ body {
     width: 100%;
     margin-top: 50px;
 }
-#project{
+#projectAndAssignment{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,14 +497,24 @@ body {
     min-height: 100vh;
 }
 .projects{
-    width: 250px;
+    width: 300px;
     height: 250px;
     border-radius: 10px;
     background-color: black;
     border: 1px solid #00D2FF;
     justify-content: space-between;
     margin: 20px;
-    flex-direction: row;
+    flex-direction: column;
+}
+.assignment{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid #00D2FF;
+    justify-content: space-between;
+    margin: 20px;
+    flex-direction: column;
 }
 #about {
     display: flex;
@@ -582,4 +592,41 @@ body {
     font-weight: bold;
     text-shadow: 0 0 10px #00D2FF;
     font-size: 25px;
+}
+.buttonAP{
+    width: 270px;
+    height: 30px;
+    background-color: #00D2FF;
+    border-radius: 8px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#assignmentImg{
+    background-image: url("../MyPortfolio/assets/assignmentImg.png");
+    width: 270px;
+    height: 160px;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*#projectImg > img{*/
+/*    width: 270px;*/
+/*    height: 160px;*/
+/*    margin-left: 2px;*/
+/*    margin-top: 20px;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+#projectImg{
+    background-image: url("../MyPortfolio/assets/projectpic.png");
+    width: 270px;
+    height: 160px;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
 }
