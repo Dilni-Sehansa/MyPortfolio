@@ -47,7 +47,15 @@ body {
     #main-pic{
         height: 350px;
         aspect-ratio: 1 / 1;
-        border: 5px solid #00CCFF;
+        /*border: 5px solid #00CCFF;*/
+    }
+    #main-pic-border{
+        position: relative;
+        background-color: white;
+        height: 360px;
+        aspect-ratio: 1/1;
+        justify-content: center;
+        align-items: center;
     }
     #textHome{
         font-size: 45px;
@@ -244,7 +252,15 @@ body {
     #main-pic{
         height: 300px;
         aspect-ratio: 1 / 1;
-        border: 3px solid #00CCFF;
+        /*border: 3px solid #00CCFF;*/
+    }
+    #main-pic-border{
+        position: relative;
+        background-color: white;
+        height: 310px;
+        aspect-ratio: 1/1;
+        justify-content: center;
+        align-items: center;
     }
     #textHome{
         font-size: 35px;
@@ -449,8 +465,16 @@ body {
     #main-pic{
         height: 250px;
         aspect-ratio: 1 / 1;
-        border: 2px solid #00CCFF;
+        /*border: 2px solid #00CCFF;*/
         margin: 0 auto;
+    }
+    #main-pic-border{
+        position: relative;
+        background-color: white;
+        height: 260px;
+        aspect-ratio: 1/1;
+        justify-content: center;
+        align-items: center;
     }
     #textHome{
         font-size: 28px;
@@ -815,6 +839,37 @@ body {
     z-index: 100;
     background-image: url("assets/homephoto.png");
     position: relative;
+    animation-iteration-count: infinite;
+    animation-duration: 3000ms;
+    animation-name: circleRunReverse;
+    display: flex;
+}
+#main-pic-border{
+    background:conic-gradient(white 50%, #00D2FF 50%);
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-duration: 3000ms;
+    animation-name: circleRun;
+    display: flex;
+}
+@keyframes circleRun {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes circleRunReverse {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+
 }
 /*home-text*/
 #textHome{
