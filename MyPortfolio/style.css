@@ -16,10 +16,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px 0 50px;
-    background: #04021f;
+    background: rgba(4, 2, 31, 0.7);
     border-bottom: 1px solid snow;
     z-index: 1000;
     box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #desktop-nav {
     display: flex;
@@ -1492,8 +1495,16 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: 0.3s;
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
+.educationCard:hover {
+    transform: scale(1.03);
+    background: rgba(0, 210, 255, 0.1);
+    border-color: #00CCFF;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+}
+
 .educationPic {
     width: 120px;
     height: 120px;
@@ -1502,6 +1513,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+
 .educationTopic {
     font-size: 20px;
     font-weight: bold;
