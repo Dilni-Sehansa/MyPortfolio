@@ -198,6 +198,21 @@ body {
         grid-template-rows: repeat(3, 1fr);
         padding: 0 100px 0 100px;
     }
+    #about-details{
+        flex-direction: row;
+        margin-top: -50px;
+    }
+    #about-detail-p{
+        font-size: 20px;
+    }
+    #about-photo{
+        min-width: 300px;
+        margin-top: 100px;
+
+    }
+    #about-details-left{
+        margin-top: 100px;
+    }
 }
 
 /*tab*/
@@ -366,6 +381,22 @@ body {
         grid-template-rows: repeat(3, 1fr);
         padding: 0 100px 0 100px;
     }
+    #about-details{
+        flex-direction: row;
+        margin-top: -50px;
+    }
+    #about-detail-p{
+        font-size: 20px;
+    }
+    #about-photo{
+        min-width: 300px;
+        margin-top: 100px;
+
+    }
+    #about-details-left{
+        margin-top: 100px;
+    }
+
 }
 
 /*phone*/
@@ -600,6 +631,31 @@ body {
     .footer-bottom {
         justify-content: center;
     }
+    #about-details{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #about-detail-p{
+        font-size: 15px;
+
+    }
+    #about-photo{
+        min-width: 250px;
+        margin-top: 50px;
+    }
+    #about-details-left{
+        margin-top: 0;
+    }
+    #about-detail-name{
+        text-align: center;
+    }
+    #about-detail-main{
+        text-align: center;
+    }
+    #about-button{
+        justify-content: center;
+    }
+
 
 
 }
@@ -1213,20 +1269,14 @@ body {
 }
 #about-detail-p{
     min-width: 50%;
-    font-size: 20px;
+    /*font-size: 20px;*/
     flex-wrap: wrap;
 }
-#about-details{
-    flex-direction: row;
 
-}
 #about-photo{
-    min-width: 300px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-image: url("../MyPortfolio/assets/about1.jpg");
-
-    margin-top: 100px;
     background-size: cover;
     border: 3px solid #00D2FF;
 }
@@ -1234,9 +1284,7 @@ body {
 #about-photo:hover{
     background-image: url("../MyPortfolio/assets/about.jpg");
 }
-#about-details-left{
-    margin-top: 100px;
-}
+
 .Abutton{
     width: auto;
     height: 40px;
