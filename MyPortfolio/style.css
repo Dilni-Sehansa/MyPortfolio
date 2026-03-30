@@ -499,7 +499,9 @@ body {
     .card{
         width: 100%;
     }
-
+    #gallery{
+        height: auto;
+    }
     /*all*/
     #photo1{
         width: 250px;
@@ -590,16 +592,16 @@ body {
         gap: 15px;
 
     }
-
     #footerSection {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
-
-    .footer-bottom-links {
+    .footer-bottom {
         justify-content: center;
     }
+
+
 }
 /*top-name*/
 .logo {
@@ -1168,6 +1170,7 @@ body {
     align-items: center;
     gap: 20px;
     width: 100%;
+    margin-top: 50px;
 }
 
 #footerSection {
