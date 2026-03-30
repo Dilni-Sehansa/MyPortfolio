@@ -689,6 +689,8 @@ body {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #111;
+    padding: 0 100px;
+
 }
 #home {
     display: flex;
@@ -936,7 +938,6 @@ body {
     z-index: 100;
     background-repeat: no-repeat;
 }
-
 #assignmentImg{
     background-image: url("../MyPortfolio/assets/pimg.png");
     width: 130px;
@@ -981,7 +982,6 @@ body {
     align-items: center;
 
 }
-
 /*all*/
 #photo1{
     background-color: #00D2FF;
@@ -1162,7 +1162,6 @@ body {
 #footer {
     background: #04021f;
     border-top: 1px solid white;
-    padding: 40px 5%;
     color: white;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -1170,9 +1169,7 @@ body {
     align-items: center;
     gap: 20px;
     width: 100%;
-    margin-top: 50px;
 }
-
 #footerSection {
     display: flex;
     flex-direction: row;
@@ -1181,8 +1178,9 @@ body {
     gap: 40px;
     width: 100%;
     flex-wrap: wrap;
-}
+    padding: 10px 0px;
 
+}
 .footer-Details {
     font-size: 14px;
     color: #dfdfdf;
@@ -1191,7 +1189,6 @@ body {
     align-items: center;
     gap: 10px;
 }
-
 .footer-bottom {
     width: 100%;
     display: flex;
@@ -1199,9 +1196,11 @@ body {
     gap: 20px;
     font-size: 12px;
     color: #888;
-    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: 30px;
 }
 .footer-Details > i{
     font-size: 16px;
     color: white;
 }
+
