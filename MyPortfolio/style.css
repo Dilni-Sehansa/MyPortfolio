@@ -1403,3 +1403,69 @@ body {
         width: 70%;
     }
 }
+
+.educationPic{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#educationPic1{
+    background-image: url("../MyPortfolio/assets/scl.jpg");
+
+}
+#educationPic2{
+    background-image: url("../MyPortfolio/assets/ijse.png");
+}
+
+#education {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.educationCard {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00D2FF;
+    border-radius: 15px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.educationPic {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #00D2FF;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.educationTopic {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00D2FF;
+    margin-bottom: 10px;
+}
+
+.educationDetail {
+    font-size: 14px;
+    color: #dfdfdf;
+    line-height: 1.6;
+}
+#about-education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 100px 0;
+}
