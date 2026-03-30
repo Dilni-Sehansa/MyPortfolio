@@ -16,13 +16,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px 0 50px;
-    background: rgba(4, 2, 31, 0.7);
+    background: #04021f;
     border-bottom: 1px solid snow;
     z-index: 1000;
     box-sizing: border-box;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #desktop-nav {
     display: flex;
@@ -1098,6 +1095,7 @@ body {
     flex-wrap: wrap;
     margin-top: 100px;
 }
+
 #gallery{
     flex-direction: column;
     margin-top: 100px;
