@@ -29,71 +29,89 @@
         <div class="menu-toggle" id="mobile-menu"><img src="../MyPortfolio/assets/menu.png"></div>
     </nav>
 </header>
-<section id="contact-left" class="contact">
-    <div>
+<section id="contact-section">
+    <section id="contact-left" class="contact">
         <div>
-            <div id="contact-pic"></div>
-        </div>
-        <div class="contact-name" id="contactName1">Dilni Sehansa</div>
-        <div class="contact-name" id="contactName2">Sesadee</div>
-        <div class="contact-name" id="contactNameDetail">Software Engineering Student</div>
-    </div>
-    <div>
-        <div class="contact-informationPic"></div>
-        <div class="contact-informationTopic"></div>
-        <div class="contact-information"></div>
-    </div>
-    <div>
-        <div class="contact-informationPic"></div>
-        <div class="contact-informationTopic"></div>
-        <div class="contact-information"></div>
-    </div>
-    <div>
-        <div class="contact-informationPic"></div>
-        <div class="contact-informationTopic"></div>
-        <div class="contact-information"></div>
-    </div>
-    <div>
-        <div id="fb" class="contactIcon"></div>
-        <div id="tiktok" class="contactIcon"></div>
-        <div id="instagram" class="contactIcon"></div>
-        <div id="linkedin" class="contactIcon"></div>
-        <div id="gitHub" class="contactIcon"></div>
-    </div>
-</section>
+                <div id="contact-pic-section">
+                    <div id="contact-pic"></div>
+                </div>
 
-<section id="contact-right" class="contact">
-    <div>Can you Send Msg</div>
-    <div>
-        <div>
-            <div>First Name</div>
-            <div id="firstNameField"></div>
+            <div class="contact-name" id="contactName1">Dilni Sehansa</div>
+            <div class="contact-name" id="contactName2">Sesadee</div>
+            <div class="contact-name" id="contactNameDetail">Software Engineering Student</div>
+        </div>
+        <div id="phone" class="contact-item">
+            <div class="contact-informationPic"><i class="fa-solid fa-phone" style="color: rgb(0, 158, 219);"></i></div>
+            <div class="information">
+                <div class="contact-informationTopic">Phone</div>
+                <div class="contact-information">074 220 2426</div>
+            </div>
+        </div>
+        <div id="email" class="contact-item">
+            <div class="contact-informationPic"><i class="fa-solid fa-envelope" style="color: rgb(0, 158, 219);"></i></div>
+            <div class="information">
+                <div class="contact-informationTopic">Email</div>
+                <div class="contact-information">dilnisehansa29@gmail.com</div>
+            </div>
+        </div>
+        <div id="location" class="contact-item">
+            <div class="contact-informationPic"><i class="fa-solid fa-location-dot" style="color: rgb(0, 158, 219);"></i></div>
+            <div class="information">
+                <div class="contact-informationTopic">Location</div>
+                <div class="contact-information">9/36 Sagara Mawatha, Panadura</div>
+            </div>
         </div>
         <div>
-            <div>Last Name</div>
-            <div id="lastNameField"></div>
+            <div id="fb" class="contactIcon"></div>
+            <div id="tiktok" class="contactIcon"></div>
+            <div id="instagram" class="contactIcon"></div>
+            <div id="linkedin" class="contactIcon"></div>
+            <div id="gitHub" class="contactIcon"></div>
         </div>
-    </div>
+    </section>
 
-    <div>
-        <div>Email Address</div>
-        <div id="emailField"></div>
-    </div>
+    <section id="contact-right" class="contact">
+        <div>Can you Send Msg</div>
+        <div>
+            <div id="nameSection">
+                <label>First Name</label>
+                <input type="text" placeholder="Dilni" id="firstNameField">
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" placeholder="Sehansa" id="lastNameField">
+            </div>
+        </div>
 
-    <div>
-        <div>Phone Number</div>
-        <div id="numberField"></div>
-    </div>
+        <div>
+            <label>Email Address</label>
+            <input type="email" placeholder="xxx@gmail.com" id="emailField">
+        </div>
 
-    <div>
-        <div>Subject</div>
-        <div id="subjectField"></div>
-    </div>
+        <div>
+            <label>Phone Number</label>
+            <input type="tel" placeholder="07X XXX XXXX" id="numberField">
+        </div>
 
-    <div>
-        <div>Massage</div>
-        <div id="msgField"></div>
-    </div>
+        <div>
+            <label>Subject</label>
+            <select id="subjectField">
+                <option value="" disabled selected>Select a topic...</option>
+                <option>Freelance Project</option>
+                <option>Internship Opportunity</option>
+                <option>Collaboration</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Massage</label>
+            <textarea placeholder="your massage" id="msgField"></textarea>
+        </div>
+
+        <button class="submit"><i class="fa-solid fa-location-arrow" style="color: rgb(0, 158, 219);"></i>Send Massage</button>
+
+    </section>
 
 </section>
 
