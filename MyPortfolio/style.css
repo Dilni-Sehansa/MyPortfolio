@@ -90,10 +90,10 @@ body {
         width: 150px;
         height: 40px;
     }
-    .buttonHome:hover{
-        width: 151px;
-        height: 41px;
-    }
+    /*.buttonHome:hover{*/
+    /*    width: 151px;*/
+    /*    height: 41px;*/
+    /*}*/
     #about {
         padding: 100px 10%;
     }
@@ -449,9 +449,6 @@ body {
         width: 125px;
         height: 35px;
     }
-    .stack-container {
-        margin-left: 120px;
-    }
     #about {
         margin-top: 100px;
         height: auto;
@@ -469,6 +466,7 @@ body {
         justify-content: center;
         width: 100%;
         max-width: 300px;
+
     }
     .fingerprint {
         position: absolute;
@@ -575,9 +573,12 @@ body {
     #about-details{
         flex-direction: column;
         margin-top: 50px;
+        overflow: hidden;
+        margin-right: 50px;
+
     }
     #about-detail-p{
-        font-size: 15px;
+        font-size: 14px;
 
     }
     #about-photo{
@@ -765,34 +766,66 @@ body {
     flex-direction: row;
     gap: 15px;
     margin-top: 20px;
+    align-items: flex-start;
 }
 .buttonHome{
-    width: 150px;
-    height: 40px;
-    background-color: transparent;
-    border: 1px solid #5a6578;
-    border-radius: 15px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    transition: all 0.4s ease;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 0;
+    outline: none;
+    border: 1px solid #5a6578;
+
+
 
  }
-.buttonHome:hover{
+#hb1{
+    background-color: #00D2FF;
+    border: 1px solid #00D2FF;
+
+}
+#hb2{
+    background-color: transparent;
+    border: 1px solid #5a6578;
+
+}
+#hb1:hover{
+    background-color: #0099cc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+}
+#hb2:hover{
     border-color: #00D2FF;
     background-color: rgba(0, 210, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.1);
+
 }
 #projectButton{
-    color: #00D2FF;
+    color: #000;
 }
 #contactButton{
     color: #00D2FF;
 }
+#hb2:hover #contactButton {
+    color: white;
+}
 .bu{
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease;
 }
 #projectAndAssignment{
     display: flex;
@@ -1162,6 +1195,8 @@ body {
     margin-top: 20px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+
 
 }
 .Abutton:hover{
@@ -1169,7 +1204,6 @@ body {
     background-color: rgba(0, 210, 255, 0.1);
 }
 .aboutButton{
-
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -1178,6 +1212,7 @@ body {
     align-items: center;
     height: 100%;
     transition: color 0.3s ease;
+
 }
 #msgButton{
     color: #00D2FF;
