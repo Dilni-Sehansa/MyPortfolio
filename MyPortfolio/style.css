@@ -33,6 +33,7 @@ body {
     width: 35px;
     height: auto;
 }
+
 /*desktop*/
 @media all and (min-width: 1025px) {
     .nav-item{
@@ -595,7 +596,6 @@ body {
     #about-button{
         justify-content: center;
     }
-
     #project-section {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 20px;
@@ -695,6 +695,7 @@ body {
     padding: 0 100px;
 
 }
+
 /*/////////////////Home Section/////////////////////*/
 #home {
     display: flex;
@@ -724,7 +725,6 @@ body {
     animation-name: circleRun;
     display: flex;
 }
-
 /*home-text*/
 #textHome{
     color: white;
@@ -872,7 +872,6 @@ body {
     gap: 20px;
     animation: stack 10s linear infinite;
 }
-
 .tech-card {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(0, 210, 255, 0.3);
@@ -906,44 +905,6 @@ body {
     background-color: rgba(0, 210, 255, 0.1);
 
 }
-/*#assignmentImg{*/
-/*    background-image: url("../MyPortfolio/assets/assignmentImg.png");*/
-/*    width: 270px;*/
-/*    height: 160px;*/
-/*    margin-left: 15px;*/
-/*    margin-top: 20px;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*}*/
-/*#projectImg{*/
-/*    background-image: url("../MyPortfolio/assets/projectpic.png");*/
-/*    width: 270px;*/
-/*    height: 160px;*/
-/*    margin-left: 15px;*/
-/*    margin-top: 20px;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*}*/
-
-/*#assignmentImg{*/
-/*    background-image: url("../MyPortfolio/assets/assignment.jpg");*/
-/*    width: 270px;*/
-/*    height: 160px;*/
-/*    margin-left: 15px;*/
-/*    margin-top: 20px;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*}*/
-
-/*#projectImg{*/
-/*    background-image: url("../MyPortfolio/assets/project.png");*/
-/*    width: 270px;*/
-/*    height: 160px;*/
-/*    margin-left: 15px;*/
-/*    margin-top: 20px;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*}*/
 #projectImg{
     background-image: url("../MyPortfolio/assets/p.png");
     width: 130px;
@@ -991,7 +952,6 @@ body {
     flex-wrap: wrap;
     margin-top: 100px;
 }
-
 #gallery{
     flex-direction: column;
     margin-top: 100px;
@@ -1181,18 +1141,15 @@ body {
 }
 #about-detail-p{
     min-width: 50%;
-    /*font-size: 20px;*/
     flex-wrap: wrap;
+    max-width: 600px;
 }
 #about-photo{
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-image: url("../MyPortfolio/assets/about1.jpg");
+    background-image: url("../MyPortfolio/assets/photo1.jpeg");
     background-size: cover;
     border: 3px solid #00D2FF;
-}
-#about-photo:hover{
-    background-image: url("../MyPortfolio/assets/about.jpg");
 }
 .Abutton{
     width: auto;
@@ -1200,17 +1157,11 @@ body {
     display: flex;
     gap: 20px;
     font-size: 12px;
-    color: #888;
     border: 1px solid #5a6578;
     border-radius: 10px;
     margin-top: 20px;
     align-items: center;
     justify-content: center;
-    /*background-color: transparent;*/
-
-}
-.aboutButton{
-    background-color: transparent;
 
 }
 .Abutton:hover{
@@ -1218,16 +1169,62 @@ body {
     background-color: rgba(0, 210, 255, 0.1);
 }
 .aboutButton{
-    font-size: 17px;
-    color: white;
-    padding: 0 10px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+#msgButton{
+    color: #00D2FF;
+}
+#cvButton{
+    color: #000;
+
+}
+#b1{
+    background-color: #00D2FF;
+    border: 1px solid #00D2FF;
+}
+#b1:hover{
+    background-color: #0099cc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+}
+#b2 {
+    background-color: transparent;
+    border: 1px solid #5a6578;
+}
+#b2:hover {
+    border-color: #00D2FF;
+    background-color: rgba(0, 210, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.1);
 }
 #about-button{
     flex-direction: row;
     display: flex;
     gap: 20px;
     margin-top: 20px;
+}
+#b2:hover #msgButton {
+    color: white;
+}
+.buttonAbout{
+    border: none;
+    outline: none;
 
+}
+#button1{
+    background-color: transparent;
+
+}
+#button2{
+    background-color: transparent;
 }
 #about-skills {
     display: flex;
@@ -1289,7 +1286,6 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
 .educationPic{
     background-size: cover;
     background-position: center;
@@ -1330,7 +1326,6 @@ body {
     border-color: #00CCFF;
     box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
 }
-
 .educationPic {
     width: 120px;
     height: 120px;
@@ -1362,6 +1357,11 @@ body {
     color: #00D2FF;
     text-decoration: none;
 }
+#about-details{
+    gap: 50px;
+}
+
+
 
 /*/////////////////Project Section/////////////////////*/
 .project{
@@ -1399,6 +1399,7 @@ body {
     font-size: 35px;
     display: block;
 }
+
 /*/////////////////Contact Section/////////////////////*/
 #contact-left{
     flex: 1;
@@ -1490,7 +1491,6 @@ body {
     font-size: 0.95rem;
     font-weight: 500;
 }
-
 #contact-right {
     flex: 1.5;
     min-width: 350px;
@@ -1509,7 +1509,6 @@ body {
 .contact-right div {
     margin-bottom: 15px;
 }
-
 label {
     display: block;
     margin-bottom: 8px;
@@ -1635,3 +1634,43 @@ textarea {
     }
 
 }
+
+
+/*#assignmentImg{*/
+/*    background-image: url("../MyPortfolio/assets/assignmentImg.png");*/
+/*    width: 270px;*/
+/*    height: 160px;*/
+/*    margin-left: 15px;*/
+/*    margin-top: 20px;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+/*#projectImg{*/
+/*    background-image: url("../MyPortfolio/assets/projectpic.png");*/
+/*    width: 270px;*/
+/*    height: 160px;*/
+/*    margin-left: 15px;*/
+/*    margin-top: 20px;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+/*#assignmentImg{*/
+/*    background-image: url("../MyPortfolio/assets/assignment.jpg");*/
+/*    width: 270px;*/
+/*    height: 160px;*/
+/*    margin-left: 15px;*/
+/*    margin-top: 20px;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+/*#projectImg{*/
+/*    background-image: url("../MyPortfolio/assets/project.png");*/
+/*    width: 270px;*/
+/*    height: 160px;*/
+/*    margin-left: 15px;*/
+/*    margin-top: 20px;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
