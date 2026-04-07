@@ -1873,6 +1873,27 @@ textarea {
     gap: 10px;
 }
 
+
+/*////////////////////////////Assignment Section///////////////////////////////*/
+#assignmentSection{
+    display: flex;
+    flex-direction: column;
+}
+#caseSection{
+    display: flex;
+    flex-direction: row;
+}
+.c{
+    width: 250px;
+    height: 300px;
+    border-radius: 20%;
+    border: 1px solid #00D2FF;
+}
+.case{
+    display: flex;
+    flex-direction: row;
+}
+
 /*///////////////////////keyframes//////////////////////*/
 @keyframes contact-img {
     from{
