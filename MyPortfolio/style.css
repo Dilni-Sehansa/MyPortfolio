@@ -1883,12 +1883,6 @@ textarea {
     display: flex;
     flex-direction: row;
 }
-.c{
-    width: 250px;
-    height: 300px;
-    border-radius: 20%;
-    border: 1px solid #00D2FF;
-}
 .case{
     display: flex;
     flex-direction: row;
