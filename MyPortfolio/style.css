@@ -118,75 +118,76 @@ body {
         width: 60px;
         height: 60px;
     }
-    /*all*/
-    #photo1{
-        width: 230px;
-        height: 200px;
-        margin-left: 10px;
-    }
-    /*main*/
-    #photo2{
-        width: 250px;
-        height: 320px;
-        margin-top: -260px;
-    }
-    /*birthday*/
-    #photo3{
-        width: 230px;
-        height: 200px;
-        margin-top: -500px;
-        margin-left: 10px;
-    }
-    /*park*/
-    #photo4{
-        width: 200px;
-        height: 200px;
-        margin-top: 380px;
-        margin-left: 30px;
-    }
-    /*batch*/
-    #photo5{
-        width: 170px;
-        height: 170px;
-        margin-top: 180px;
-        margin-left: 20px;
-    }
-    /*sithum*/
-    #photo6{
-        width: 170px;
-        height: 170px;
-        margin-top: 180px;
-        margin-left: 60px;
+
+    /*!*all*!*/
+    /*#photo1{*/
+    /*    width: 230px;*/
+    /*    height: 200px;*/
+    /*    margin-left: 10px;*/
+    /*}*/
+    /*!*main*!*/
+    /*#photo2{*/
+    /*    width: 250px;*/
+    /*    height: 320px;*/
+    /*    margin-top: -260px;*/
+    /*}*/
+    /*!*birthday*!*/
+    /*#photo3{*/
+    /*    width: 230px;*/
+    /*    height: 200px;*/
+    /*    margin-top: -500px;*/
+    /*    margin-left: 10px;*/
+    /*}*/
+    /*!*park*!*/
+    /*#photo4{*/
+    /*    width: 200px;*/
+    /*    height: 200px;*/
+    /*    margin-top: 380px;*/
+    /*    margin-left: 30px;*/
+    /*}*/
+    /*!*batch*!*/
+    /*#photo5{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*    margin-top: 180px;*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    /*!*sithum*!*/
+    /*#photo6{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*    margin-top: 180px;*/
+    /*    margin-left: 60px;*/
 
 
-    }
-    /*beach*/
-    #photo7{
-        width: 170px;
-        height: 170px;
-        margin-top: -550px;
-        margin-left: 20px;
-    }
-    /*dinshini*/
-    #photo8{
-        width: 200px;
-        height: 200px;
-        margin-top: -200px;
-        margin-left: 20px;
-    }
-    /*dihini*/
-    #photo9{
-        width: 170px;
-        height: 170px;
-        margin-top: -550px;
-        margin-left: 60px;
-    }
-    #photoSection{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        padding: 0 100px 0 100px;
-    }
+    /*}*/
+    /*!*beach*!*/
+    /*#photo7{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*    margin-top: -550px;*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    /*!*dinshini*!*/
+    /*#photo8{*/
+    /*    width: 200px;*/
+    /*    height: 200px;*/
+    /*    margin-top: -200px;*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    /*!*dihini*!*/
+    /*#photo9{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*    margin-top: -550px;*/
+    /*    margin-left: 60px;*/
+    /*}*/
+    /*#photoSection{*/
+    /*    display: grid;*/
+    /*    grid-template-columns: repeat(3, 1fr);*/
+    /*    grid-template-rows: repeat(3, 1fr);*/
+    /*    padding: 0 100px 0 100px;*/
+    /*}*/
     #about-details{
         flex-direction: row;
         margin-top: -50px;
@@ -201,12 +202,12 @@ body {
     #about-details-left{
         margin-top: 100px;
     }
-    #project-section {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 0 5%;
-        gap: 20px;
-        margin-top: -600px;
-    }
+    /*#project-section {*/
+    /*    grid-template-columns: repeat(3, 1fr);*/
+    /*    padding: 0 5%;*/
+    /*    gap: 20px;*/
+    /*    margin-top: -600px;*/
+    /*}*/
     /*.project {*/
     /*    max-width: 500px;*/
     /*}*/
@@ -292,73 +293,82 @@ body {
         width: 60px;
         height: 60px;
     }
-    /*all*/
-    #photo1{
-        width: 230px;
-        height: 200px;
-        margin-left: 10px;
+
+    #photoSection {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
-    /*main*/
-    #photo2{
-        width: 250px;
-        height: 320px;
-        margin-top: -260px;
+
+    #photo1 {
+        grid-column: 1 / 3 !important;
+        height: 350px;
     }
-    /*birthday*/
-    #photo3{
-        width: 230px;
-        height: 200px;
-        margin-top: -500px;
-        margin-left: 10px;
-    }
-    /*park*/
-    #photo4{
-        width: 200px;
-        height: 200px;
-        margin-top: 380px;
-        margin-left: 30px;
-    }
-    /*batch*/
-    #photo5{
-        width: 170px;
-        height: 170px;
-        margin-top: 180px;
-        margin-left: 20px;
-    }
-    /*sithum*/
-    #photo6{
-        width: 170px;
-        height: 170px;
-        margin-top: 180px;
-        margin-left: 60px;
-    }
-    /*beach*/
-    #photo7{
-        width: 170px;
-        height: 170px;
-        margin-top: -550px;
-        margin-left: 20px;
-    }
-    /*dinshini*/
-    #photo8{
-        width: 200px;
-        height: 200px;
-        margin-top: -200px;
-        margin-left: 20px;
-    }
-    /*dihini*/
-    #photo9{
-        width: 170px;
-        height: 170px;
-        margin-top: -550px;
-        margin-left: 60px;
-    }
-    #photoSection{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        padding: 0 100px 0 100px;
-    }
+    /*!*all*!*/
+    /*#photo1{*/
+    /*    width: 230px;*/
+    /*    height: 200px;*/
+    /*    margin-left: 10px;*/
+    /*}*/
+    /*!*main*!*/
+    /*#photo2{*/
+    /*    width: 250px;*/
+    /*    height: 320px;*/
+    /*    margin-top: -260px;*/
+    /*}*/
+    /*!*birthday*!*/
+    /*#photo3{*/
+    /*    width: 230px;*/
+    /*    height: 200px;*/
+    /*    margin-top: -500px;*/
+    /*    margin-left: 10px;*/
+    /*}*/
+    /*!*park*!*/
+    /*#photo4{*/
+    /*    width: 200px;*/
+    /*    height: 200px;*/
+    /*    margin-top: 380px;*/
+    /*    margin-left: 30px;*/
+    /*}*/
+    /*!*batch*!*/
+    /*#photo5{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*    margin-top: 180px;*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    /*!*sithum*!*/
+    /*#photo6{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*    margin-top: 180px;*/
+    /*    margin-left: 60px;*/
+    /*}*/
+    /*!*beach*!*/
+    /*#photo7{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*    margin-top: -550px;*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    /*!*dinshini*!*/
+    /*#photo8{*/
+    /*    width: 200px;*/
+    /*    height: 200px;*/
+    /*    margin-top: -200px;*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    /*!*dihini*!*/
+    /*#photo9{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*    margin-top: -550px;*/
+    /*    margin-left: 60px;*/
+    /*}*/
+    /*#photoSection{*/
+    /*    display: grid;*/
+    /*    grid-template-columns: repeat(3, 1fr);*/
+    /*    grid-template-rows: repeat(3, 1fr);*/
+    /*    padding: 0 100px 0 100px;*/
+    /*}*/
     #about-details{
         flex-direction: row;
         margin-top: -50px;
@@ -514,60 +524,74 @@ body {
     .card{
         width: 100%;
     }
-    #gallery{
-        height: auto;
-        padding: 50px 0;
+    #photoSection {
+        grid-template-columns: 1fr !important;
+        padding: 0 20px;
     }
-    /*all*/
-    #photo1{
-        width: 250px;
+
+    #photo1 {
+        grid-column: 1 / 2 !important;
         height: 250px;
     }
-    /*main*/
-    #photo2{
-        width: 250px;
+
+    .photo {
+
         height: 250px;
     }
-    /*birthday*/
-    #photo3{
-        width: 250px;
-        height: 250px;
-    }
-    /*park*/
-    #photo4{
-        width: 250px;
-        height: 250px;
-    }
-    /*batch*/
-    #photo5{
-        width: 250px;
-        height: 250px;
-    }
-    /*sithum*/
-    #photo6{
-        width: 250px;
-        height: 250px;
-    }
-    /*beach*/
-    #photo7{
-        width: 250px;
-        height: 250px;
-    }
-    /*dinshini*/
-    #photo8{
-        width: 250px;
-        height: 250px;
-    }
-    /*dihini*/
-    #photo9{
-        width: 250px;
-        height: 250px;
-    }
-    #photoSection{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
+    /*#gallery{*/
+    /*    height: auto;*/
+    /*    padding: 50px 0;*/
+    /*}*/
+    /*!*all*!*/
+    /*#photo1{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*!*main*!*/
+    /*#photo2{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*!*birthday*!*/
+    /*#photo3{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*!*park*!*/
+    /*#photo4{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*!*batch*!*/
+    /*#photo5{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*!*sithum*!*/
+    /*#photo6{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*!*beach*!*/
+    /*#photo7{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*!*dinshini*!*/
+    /*#photo8{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*!*dihini*!*/
+    /*#photo9{*/
+    /*    width: 250px;*/
+    /*    height: 250px;*/
+    /*}*/
+    /*#photoSection{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    gap: 15px;*/
+    /*}*/
     #footerSection {
         flex-direction: column;
         gap: 15px;
@@ -1020,158 +1044,273 @@ body {
     flex-wrap: wrap;
     margin-top: 100px;
 }
+
 #gallery{
+    padding: 100px 0;
+    display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    align-items: center;
+    min-height: 100vh;
     height: auto;
-    align-items: center;
+    background: #00061A;
+    margin-top: 0 !important;
+    overflow: hidden;
+
+}
+#gallery > .topic{
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-#photoSection {
-    gap: 20px !important;
+#gallery > .topic > span {
+    color: #00D2FF;
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
 }
 
-/*all*/
-#photo1{
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo7.jpeg");
+#photoSection{
+    display: grid;
+    gap: 25px;
+    padding: 0 10%;
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.photo{
+    position: relative;
+    height: 280px;
+    border-radius: 15px;
     background-size: cover;
     background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    margin-top: 100px;
-    border-radius: 5px;
-    grid-column: 2/3;
-    grid-row: 1/2;
-
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    filter: grayscale(40%);
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    overflow: hidden;
     cursor: pointer;
-}
-
-.photo:hover {
-    filter: grayscale(0%);
-    transform: scale(1.03);
-    border-color: #00D2FF;
-    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);
-    z-index: 10;
-}
-
-/*main*/
-#photo2{
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo2.jpeg");
-    background-size: cover;
-    background-position: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    grid-column: 2/3;
-    grid-row: 2/3;
 }
-/*birthday*/
-#photo3{
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo5.jpeg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-/*park*/
-#photo4{
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo4.jpeg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    grid-column: 1/2;
-    grid-row: 1/2 ;
-}
-/*batch*/
-#photo5{
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/batch.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-/*sithum*/
-#photo6{
-    background-color: #00D2FF;
-    background-image: url("../MyPortfolio/assets/photo6.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-/*beach*/
-#photo7{
-    background-color: #00D2FF;
+#photo1 {
+    grid-column: 1 / 4;
+    height: 450px;
     background-image: url("../MyPortfolio/assets/photo1.jpeg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    grid-column: 3/4;
-    grid-row: 3/4;
 }
-/*dinshini*/
+#photo2{
+    background-image: url("../MyPortfolio/assets/photo2.jpeg");
+}
+#photo3{
+    background-image: url("../MyPortfolio/assets/photo3.jpeg");
+}
+#photo4{
+    background-image: url("../MyPortfolio/assets/photo4.jpeg");
+}
+#photo5{
+    background-image: url("../MyPortfolio/assets/photo5.jpeg");
+}
+#photo6{
+    background-image: url("../MyPortfolio/assets/photo6.jpg");
+}
+#photo7{
+    background-image: url("../MyPortfolio/assets/photo7.jpeg");
+}
 #photo8{
-    background-color: #00D2FF;
     background-image: url("../MyPortfolio/assets/photo8.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    grid-column: 3/4;
-    grid-row: 2/3;
 }
-/*dihini*/
 #photo9{
-    background-color: #00D2FF;
     background-image: url("../MyPortfolio/assets/photo9.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-    align-items: center;
-    position: relative;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    grid-column: 1/2;
-    grid-row: 3/4;
 }
+.photo:hover {
+    height: 100%;
+    width: 100%;
+    transform: scale(1.05);
+    border-color: #00D2FF;
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.5);
+    z-index: 200;
+}
+.photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 6, 26, 0.9));
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.3s;
+}
+.photo-overlay > span {
+    color: #00D2FF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+.photo:hover .photo-overlay {
+    opacity: 1;
+}
+
+.photo:hover .photo-overlay > span {
+    transform: translateY(0);
+}
+/*#gallery{*/
+/*    flex-direction: column;*/
+/*    margin-top: 50px;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+/*}*/
+
+/*#photoSection {*/
+/*    gap: 20px !important;*/
+/*}*/
+
+/*!*all*!*/
+/*#photo1{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo7.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    margin-top: 100px;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 2/3;*/
+/*    grid-row: 1/2;*/
+
+/*    border: 1px solid rgba(255, 255, 255, 0.1);*/
+/*    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);*/
+/*    filter: grayscale(40%);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.photo:hover {*/
+/*    filter: grayscale(0%);*/
+/*    transform: scale(1.03);*/
+/*    border-color: #00D2FF;*/
+/*    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);*/
+/*    z-index: 10;*/
+/*}*/
+
+/*!*main*!*/
+/*#photo2{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo2.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 20px;*/
+/*    grid-column: 2/3;*/
+/*    grid-row: 2/3;*/
+/*}*/
+/*!*birthday*!*/
+/*#photo3{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo5.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 2/3;*/
+/*    grid-row: 3/4;*/
+/*}*/
+/*!*park*!*/
+/*#photo4{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo4.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 1/2;*/
+/*    grid-row: 1/2 ;*/
+/*}*/
+/*!*batch*!*/
+/*#photo5{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/batch.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 3/4;*/
+/*    grid-row: 1/2;*/
+/*}*/
+/*!*sithum*!*/
+/*#photo6{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo6.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 1/2;*/
+/*    grid-row: 1/2;*/
+/*}*/
+/*!*beach*!*/
+/*#photo7{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo1.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 3/4;*/
+/*    grid-row: 3/4;*/
+/*}*/
+/*!*dinshini*!*/
+/*#photo8{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo8.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 3/4;*/
+/*    grid-row: 2/3;*/
+/*}*/
+/*!*dihini*!*/
+/*#photo9{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo9.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 1/2;*/
+/*    grid-row: 3/4;*/
+/*}*/
+
+
 
 /*/////////////////Footer Section/////////////////////*/
 #footer {
