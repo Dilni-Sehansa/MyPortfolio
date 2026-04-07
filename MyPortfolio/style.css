@@ -5,6 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: white;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 #nav-top {
     position: fixed;
@@ -19,6 +20,10 @@ body {
     border-bottom: 1px solid snow;
     z-index: 1000;
     box-sizing: border-box;
+
+    background: rgba(4, 2, 31, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 210, 255, 0.3);
 }
 #desktop-nav {
     display: flex;
@@ -702,8 +707,8 @@ body {
 #home {
     display: flex;
     align-items: center;
-
 }
+
 /*home-photo*/
 #main-pic{
     border-radius: 50%;
@@ -718,6 +723,7 @@ body {
     animation-duration: 3000ms;
     animation-name: circleRunReverse;
     display: flex;
+
 }
 #main-pic-border{
     background:conic-gradient(white 50%, #00D2FF 50%);
@@ -726,13 +732,21 @@ body {
     animation-duration: 3000ms;
     animation-name: circleRun;
     display: flex;
+    padding: 5px;
+    background: conic-gradient(from 0deg, #00D2FF, transparent);
 }
+
 /*home-text*/
 #textHome{
     color: white;
     font-weight: bold;
-    font-family: "Iosevka Charon", monospace;
+    /*font-family: "Iosevka Charon", monospace;*/
     text-shadow: 0 0 10px #00D2FF;
+
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
 }
 #robo-pic {
@@ -858,6 +872,18 @@ body {
     margin: 20px;
     flex-direction: column;
 }
+.projects:hover{
+    transform: scale(1.03);
+
+    border-color: #00CCFF;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+}
+.assignment:hover{
+    transform: scale(1.03);
+
+    border-color: #00CCFF;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+}
 #about {
     display: flex;
     flex-direction: column;
@@ -885,6 +911,12 @@ body {
     background-position: center right;
     filter: drop-shadow(0 0 15px #00D2FF);
 }
+
+#finger-bg:hover {
+    filter: drop-shadow(0 0 25px #00D2FF);
+    transform: scale(1.02);
+}
+
 .about-description {
     flex: 1.5;
     text-align: left;
@@ -909,8 +941,6 @@ body {
     animation: stack 10s linear infinite;
 }
 .tech-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 210, 255, 0.3);
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -918,7 +948,11 @@ body {
     font-size: 30px;
     color: white;
     flex-shrink: 0;
+
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid
 }
+
 .topic{
     color: white;
     font-weight: bold;
@@ -934,12 +968,10 @@ body {
     justify-content: center;
     margin-top: 15px;
     background-color: transparent;
-
 }
 .buttonAP:hover{
     border-color: #00D2FF;
     background-color: rgba(0, 210, 255, 0.1);
-
 }
 #projectImg{
     background-image: url("../MyPortfolio/assets/p.png");
@@ -994,6 +1026,11 @@ body {
     height: auto;
     align-items: center;
 }
+
+#photoSection {
+    gap: 20px !important;
+}
+
 /*all*/
 #photo1{
     background-color: #00D2FF;
@@ -1008,7 +1045,21 @@ body {
     border-radius: 5px;
     grid-column: 2/3;
     grid-row: 1/2;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: grayscale(40%);
+    cursor: pointer;
 }
+
+.photo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    border-color: #00D2FF;
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);
+    z-index: 10;
+}
+
 /*main*/
 #photo2{
     background-color: #00D2FF;
@@ -1401,10 +1452,7 @@ body {
     gap: 50px;
 }
 
-
-
 /*/////////////////Project Section/////////////////////*/
-
 #project-page{
     /*padding: 100px 0;*/
     margin-top: 150px;
@@ -1422,7 +1470,7 @@ body {
     justify-items: center;
     align-items: center;
     padding: 50px 50px;
-    margin-top: 50px;
+    margin-top: 30px;
 
 
 }
@@ -1451,8 +1499,6 @@ body {
 .project:hover .projectPic {
     transform: scale(1.02);
 }
-
-
 #project-page > .topic{
     font-size: 35px;
     text-align: center;
@@ -1512,17 +1558,6 @@ body {
     font-size: 12px;
 
 }
-/*.pb{*/
-/*    width: 150px;*/
-/*    height: 50px;*/
-/*    border-radius: 10px;*/
-/*}*/
-/*.projectButtonSec{*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    gap: 20px;*/
-/*    margin-top: 20px;*/
-/*}*/
 .viewProject{
     margin-top: 15px;
     color: #00D2FF;
@@ -1806,4 +1841,15 @@ textarea {
 /*    margin-top: 20px;*/
 /*    background-size: cover;*/
 /*    background-position: center;*/
+/*}*/
+/*.pb{*/
+/*    width: 150px;*/
+/*    height: 50px;*/
+/*    border-radius: 10px;*/
+/*}*/
+/*.projectButtonSec{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    gap: 20px;*/
+/*    margin-top: 20px;*/
 /*}*/
