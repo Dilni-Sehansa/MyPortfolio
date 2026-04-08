@@ -2132,6 +2132,12 @@ textarea {
 #case02 > .caseSection{
     margin-top: -750px;
 }
+.case01Card:hover, .case02Card:hover{
+    transform: translateY(-15px);
+    border-color: #00D2FF;
+    box-shadow: 0 0 40px rgba(0, 210, 255, 0.2);
+    background: rgba(0, 210, 255, 0.05);
+}
 
 /*///////////////////////keyframes//////////////////////*/
 @keyframes contact-img {
