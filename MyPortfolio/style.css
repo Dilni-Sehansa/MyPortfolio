@@ -2155,32 +2155,42 @@ textarea {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
 }
+
 .code {
     background-color: #00D2FF;
     color: #000;
+
 }
-.code::after {
-    content: "View Code";
-}
+
 .code:hover {
     background-color: #04021f;
-    color: #ffffff;
-    border: 1px solid white;
+    color: #000;
+
 }
 .view:hover {
-    background-color: #00D2FF;
-    color: #000;
+    color: #ffffff;
 }
+
 .view {
     background-color: transparent;
     border: 1px solid #00D2FF;
     color: #00D2FF;
 }
-.view::after {
-    content: "Live Demo";
+.view{
+    background-color: transparent;
+    border: 1px solid #00D2FF;
+    color: #00D2FF;
 }
-.view:hover {
+
+.bv:hover {
     background-color: rgba(0, 210, 255, 0.1);
 }
 #assignmentPic2-7BorderBorder {
