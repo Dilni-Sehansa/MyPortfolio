@@ -400,6 +400,9 @@ body {
     .project {
         max-width: 350px;
     }
+    .case{
+        grid-template-rows: repeat(3, 1fr);
+    }
     /*.caseSection {*/
     /*    grid-template-columns: repeat(3, 1fr);*/
     /*    width: 95%;*/
@@ -651,6 +654,9 @@ body {
     .caseSection {
         grid-template-columns: 1fr;
         /*max-width: 350px;*/
+    }
+    .case{
+        grid-template-rows: repeat(1, 1fr);
     }
 
     /*#caseSection {*/
@@ -1908,8 +1914,9 @@ textarea {
 }
 
 #assignmentSection > .topic{
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
+    font-size: 40px;
 }
 #assignmentSection > .topic > span{
     color: #00D2FF;
@@ -1918,6 +1925,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
+    margin-top: 50px;
 
 }
 .c{
@@ -1972,10 +1980,158 @@ textarea {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
     transition: 0.3s;
+}
+
+.c:hover {
+    transform: translateY(-15px);
+    border-color: #00D2FF;
+    box-shadow: 0 0 40px rgba(0, 210, 255, 0.2);
+    background: rgba(0, 210, 255, 0.05);
+}
+.caseButton:hover {
+    letter-spacing: 2px;
+    box-shadow: 0 0 25px #00D2FF;
+}
+
+.case{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
 
 }
 
+.caseTopic{
+    font-size: 17px;
+    text-decoration: underline;
+    text-decoration-color: #00D2FF;
+    text-underline-offset: 8px;
+    grid-template-rows: repeat(1,1fr);
+    margin-top: 100px;
+}
+.caseSection{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px 20px;
+    padding: 20px 0;
+    justify-items: center;
+    margin-top: -220px;
 
+}
+.case01Card , .case02Card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    border-radius: 20px;
+    padding: 25px 20px;
+
+
+}
+.assignmentPicBorder{
+
+    border-radius: 50%;
+    border: 1px solid #00D2FF;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-duration: 3000ms;
+    animation-direction: alternate-reverse;
+    animation: pulseCircle 3s infinite ease-in-out;
+
+}
+.assignmentPic{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buttonSec{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.code, .view {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.code {
+    background-color: #00D2FF;
+    color: #000;
+}
+
+.code::after {
+    content: "View Code";
+}
+
+
+.code:hover {
+    background-color: #04021f;
+    color: #ffffff;
+    border: 1px solid white;
+}
+
+.view:hover {
+    background-color: #00D2FF;
+    color: #000;
+}
+.view {
+    background-color: transparent;
+    border: 1px solid #00D2FF;
+    color: #00D2FF;
+}
+
+.view::after { content: "Live Demo"; }
+
+
+.view:hover { background-color: rgba(0, 210, 255, 0.1); }
+
+
+#assignmentPic2-7BorderBorder {
+    border-radius: 50%;
+    border: 1px solid #00D2FF;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-duration: 3000ms;
+    animation-direction: alternate-reverse;
+    animation: pulseCircle 3s infinite ease-in-out;
+}
+#case02 > .caseTopic{
+    margin-top: -650px;
+}
+#case02 > .caseSection{
+    margin-top: -750px;
+}
 
 /*///////////////////////keyframes//////////////////////*/
 @keyframes contact-img {
@@ -2050,6 +2206,32 @@ textarea {
 @keyframes slideIn {
     from { opacity: 0; transform: translateY(40px); }
     to { opacity: 1; transform: translateY(0); }
+}
+@keyframes circle{
+    from{
+        border-color: #00D2FF;
+        box-shadow: 0 0 5px #00D2FF;
+        transform: scale(1);
+    }
+    to{
+        border-color: #5a6578;
+        box-shadow: 0 0 10px #5a6578;
+        transform: scale(1.09);
+    }
+}
+@keyframes pulseCircle {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.4);
+        transform: scale(1);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(0, 210, 255, 0);
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 210, 255, 0);
+        transform: scale(1);
+    }
 }
 
 
