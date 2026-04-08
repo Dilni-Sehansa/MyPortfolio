@@ -211,13 +211,12 @@ body {
     .project {
         max-width: 500px;
     }
-    /*.caseSection {*/
-    /*    grid-template-columns: 3fr;*/
-    /*}*/
 
-    /*#assignmentSection {*/
-    /*    padding: 40px 20px;*/
-    /*}*/
+    .caseSection {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
 }
 /*tab*/
 @media all and (min-width: 800px) and  (max-width: 1024px) {
@@ -400,13 +399,12 @@ body {
     .project {
         max-width: 350px;
     }
-    .case{
-        grid-template-rows: repeat(3, 1fr);
+
+    .caseSection {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
     }
-    /*.caseSection {*/
-    /*    grid-template-columns: repeat(3, 1fr);*/
-    /*    width: 95%;*/
-    /*}*/
+
 
 }
 
@@ -652,17 +650,9 @@ body {
         max-width: 300px;
     }
     .caseSection {
-        grid-template-columns: 1fr;
-        /*max-width: 350px;*/
+        grid-template-columns: 1fr !important;
+        gap: 25px;
     }
-    .case{
-        grid-template-rows: repeat(1, 1fr);
-    }
-
-    /*#caseSection {*/
-    /*    flex-direction: column;*/
-    /*    align-items: center;*/
-    /*}*/
 }
 
 /*/////////////////Nav Section/////////////////////*/
