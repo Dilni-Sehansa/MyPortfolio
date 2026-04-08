@@ -2025,6 +2025,7 @@ textarea {
     align-items: center;
 
 
+
 }
 .caseBorder{
     border-radius: 50%;
@@ -2061,6 +2062,7 @@ textarea {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
     transition: 0.3s;
+    text-decoration: none;
 }
 .c:hover {
     transform: translateY(-15px);
