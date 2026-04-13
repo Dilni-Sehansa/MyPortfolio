@@ -1679,7 +1679,15 @@ body {
     animation: holoPulse 4s infinite;
     opacity: 0;
 }
-
+#professional-social > .topic > span{
+    color: #00D2FF;
+}
+#about-skills > .topic > span{
+    color: #00D2FF;
+}
+#about-education > .topic > span{
+    color: #00D2FF;
+}
 
 /*/////////////////Project Section/////////////////////*/
 #project-page{
