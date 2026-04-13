@@ -211,14 +211,7 @@ body {
     .project {
         max-width: 500px;
     }
-    .caseSection {
-        grid-template-columns: repeat(4, 1fr);
 
-    }
-    #mainCaseSection{
-        display: flex;
-        flex-direction: row;
-    }
 }
 /*tab*/
 @media all and (min-width: 800px) and  (max-width: 1024px) {
@@ -399,13 +392,9 @@ body {
     .project {
         max-width: 350px;
     }
-    .caseSection {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 20px;
-    }
+
 
 }
-
 /*phone*/
 @media all and (max-width: 800px) {
     .nav-item{
@@ -555,6 +544,13 @@ body {
     .photo {
 
         height: 250px;
+    }
+    #MainCaseSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caseSection {
+        grid-template-columns: 1fr;
     }
     /*#gallery{*/
     /*    height: auto;*/
@@ -1985,31 +1981,37 @@ textarea {
 
 
 /*////////////////////////////Assignment Section///////////////////////////////*/
-#assignmentSection{
+#assignmentSection {
     display: flex;
     flex-direction: column;
     height: auto;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
-    flex-wrap: wrap;
-    padding: 100px 20px;
+    padding: 60px 20px;
 }
-#assignmentSection > .topic{
+
+#assignmentSection > .topic {
     padding: 20px 0;
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(30px, 8vw, 40px);
 }
-#assignmentSection > .topic > span{
+
+#assignmentSection > .topic > span {
     color: #00D2FF;
 }
-#MainCaseSection{
-    gap: 50px;
+
+#MainCaseSection {
+    gap: 30px;
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
-.c{
+
+.c {
     width: 280px;
     height: 350px;
     background: rgba(255, 255, 255, 0.03);
@@ -2023,11 +2025,16 @@ textarea {
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     justify-content: center;
     align-items: center;
-
-
-
 }
-.caseBorder{
+
+.c:hover {
+    transform: translateY(-15px);
+    border-color: #00D2FF;
+    box-shadow: 0 0 40px rgba(0, 210, 255, 0.2);
+    background: rgba(0, 210, 255, 0.05);
+}
+
+.caseBorder {
     border-radius: 50%;
     width: 160px;
     aspect-ratio: 1/1;
@@ -2037,20 +2044,18 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-    animation-duration: 4000ms;
-
+    animation: spin 4000ms infinite linear;
 }
-.caseImg{
+
+.caseImg {
     border-radius: 50%;
     width: 130px;
     aspect-ratio: 1/1;
     background: linear-gradient(45deg, #00061A, #001533);
     border: 1px solid rgba(0, 210, 255, 0.3);
-
 }
-.caseButton{
+
+.caseButton {
     background-color: #00D2FF;
     color: #000;
     border: none;
@@ -2064,60 +2069,56 @@ textarea {
     transition: 0.3s;
     text-decoration: none;
 }
-.c:hover {
-    transform: translateY(-15px);
-    border-color: #00D2FF;
-    box-shadow: 0 0 40px rgba(0, 210, 255, 0.2);
-    background: rgba(0, 210, 255, 0.05);
-}
-.caseButton:hover {
-    letter-spacing: 2px;
-    box-shadow: 0 0 25px #00D2FF;
-}
-.case{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
 
+.case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
 }
-.caseTopic{
-    font-size: 17px;
+
+.caseTopic {
+    font-size: 22px;
     text-decoration: underline;
     text-decoration-color: #00D2FF;
     text-underline-offset: 8px;
-    grid-template-rows: repeat(1,1fr);
-    margin-top: 100px;
+    margin: 40px 0;
+    text-align: center;
 }
-.caseSection{
+
+#case02 > .caseTopic,
+#case02 > .caseSection {
+    margin-top: 0 !important;
+}
+
+.caseSection {
     display: grid;
     width: 100%;
     max-width: 1200px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px 20px;
-    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
     justify-items: center;
-    margin-top: -220px;
-
+    margin-top: 0;
 }
-.case01Card , .case02Card{
+
+.case01Card, .case02Card {
     display: flex;
     flex-direction: column;
     gap: 15px;
     transition: 0.3s ease-in-out;
     width: 100%;
-    height: auto;
     max-width: 250px;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(0, 210, 255, 0.15);
     border-radius: 20px;
     padding: 25px 20px;
-
-
 }
-.assignmentPicBorder{
 
+.assignmentPicBorder, #assignmentPic2-7BorderBorder {
     border-radius: 50%;
     border: 1px solid #00D2FF;
     width: 100px;
@@ -2126,24 +2127,16 @@ textarea {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    animation-name: circle;
-    animation-iteration-count: infinite;
-    animation-duration: 3000ms;
-    animation-direction: alternate-reverse;
     animation: pulseCircle 3s infinite ease-in-out;
+}
 
-}
-.assignmentPic{
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-}
-.buttonSec{
+.buttonSec {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 100%;
 }
+
 .code, .view {
     width: 100%;
     height: 40px;
@@ -2154,74 +2147,31 @@ textarea {
     transition: 0.3s;
     font-size: 14px;
     text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
     text-decoration: none;
-    text-align: center;
-    align-items: center;
     display: flex;
     justify-content: center;
-
-
+    align-items: center;
 }
 
 .code {
     background-color: #00D2FF;
     color: #000;
-
+}
+.view {
+    border: 1px solid #00D2FF;
+    color: #00D2FF; background: transparent;
 }
 
 .code:hover {
     background-color: #04021f;
-    color: #000;
-
+    color: #fff;
 }
 .view:hover {
-    color: #ffffff;
-}
-
-.view {
-    background-color: transparent;
-    border: 1px solid #00D2FF;
-    color: #00D2FF;
-}
-.view{
-    background-color: transparent;
-    border: 1px solid #00D2FF;
-    color: #00D2FF;
-}
-
-.bv:hover {
     background-color: rgba(0, 210, 255, 0.1);
 }
-#assignmentPic2-7BorderBorder {
-    border-radius: 50%;
-    border: 1px solid #00D2FF;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    animation-name: circle;
-    animation-iteration-count: infinite;
-    animation-duration: 3000ms;
-    animation-direction: alternate-reverse;
-    animation: pulseCircle 3s infinite ease-in-out;
-}
-#case02 > .caseTopic{
-    margin-top: -650px;
-}
-#case02 > .caseSection{
-    margin-top: -750px;
-}
-.case01Card:hover, .case02Card:hover{
-    transform: translateY(-15px);
-    border-color: #00D2FF;
-    box-shadow: 0 0 40px rgba(0, 210, 255, 0.2);
-    background: rgba(0, 210, 255, 0.05);
-}
+
+
+
 
 /*///////////////////////keyframes//////////////////////*/
 @keyframes contact-img {
@@ -2289,44 +2239,24 @@ textarea {
         transform: rotate(-360deg);
     }
 }
+
+
 @keyframes spin {
-    to { transform: rotate(360deg); }
-}
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-@keyframes circle{
-    from{
-        border-color: #00D2FF;
-        box-shadow: 0 0 5px #00D2FF;
-        transform: scale(1);
-    }
-    to{
-        border-color: #5a6578;
-        box-shadow: 0 0 10px #5a6578;
-        transform: scale(1.09);
+    to {
+        transform: rotate(360deg);
     }
 }
+
 @keyframes pulseCircle {
     0% {
-        box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.4);
-        transform: scale(1);
-    }
-    70% {
-        box-shadow: 0 0 0 15px rgba(0, 210, 255, 0);
-        transform: scale(1.05);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(0, 210, 255, 0);
-        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.4); transform: scale(1);
+    }70% {
+        box-shadow: 0 0 0 15px rgba(0, 210, 255, 0); transform: scale(1.05);
+    }100% {
+        box-shadow: 0 0 0 0 rgba(0, 210, 255, 0); transform: scale(1);
     }
 }
-@keyframes holoPulse {
-    0% { transform: scale(0.9); opacity: 0; }
-    50% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 15px rgba(0, 210, 255, 0.3); }
-    100% { transform: scale(1.3); opacity: 0; }
-}
+
 
 /*#assignmentImg{*/
 /*    background-image: url("../MyPortfolio/assets/assignmentImg.png");*/
