@@ -95,10 +95,6 @@ body {
         width: 150px;
         height: 40px;
     }
-    /*.buttonHome:hover{*/
-    /*    width: 151px;*/
-    /*    height: 41px;*/
-    /*}*/
     #about {
         padding: 100px 10%;
     }
@@ -118,76 +114,6 @@ body {
         width: 60px;
         height: 60px;
     }
-
-    /*!*all*!*/
-    /*#photo1{*/
-    /*    width: 230px;*/
-    /*    height: 200px;*/
-    /*    margin-left: 10px;*/
-    /*}*/
-    /*!*main*!*/
-    /*#photo2{*/
-    /*    width: 250px;*/
-    /*    height: 320px;*/
-    /*    margin-top: -260px;*/
-    /*}*/
-    /*!*birthday*!*/
-    /*#photo3{*/
-    /*    width: 230px;*/
-    /*    height: 200px;*/
-    /*    margin-top: -500px;*/
-    /*    margin-left: 10px;*/
-    /*}*/
-    /*!*park*!*/
-    /*#photo4{*/
-    /*    width: 200px;*/
-    /*    height: 200px;*/
-    /*    margin-top: 380px;*/
-    /*    margin-left: 30px;*/
-    /*}*/
-    /*!*batch*!*/
-    /*#photo5{*/
-    /*    width: 170px;*/
-    /*    height: 170px;*/
-    /*    margin-top: 180px;*/
-    /*    margin-left: 20px;*/
-    /*}*/
-    /*!*sithum*!*/
-    /*#photo6{*/
-    /*    width: 170px;*/
-    /*    height: 170px;*/
-    /*    margin-top: 180px;*/
-    /*    margin-left: 60px;*/
-
-
-    /*}*/
-    /*!*beach*!*/
-    /*#photo7{*/
-    /*    width: 170px;*/
-    /*    height: 170px;*/
-    /*    margin-top: -550px;*/
-    /*    margin-left: 20px;*/
-    /*}*/
-    /*!*dinshini*!*/
-    /*#photo8{*/
-    /*    width: 200px;*/
-    /*    height: 200px;*/
-    /*    margin-top: -200px;*/
-    /*    margin-left: 20px;*/
-    /*}*/
-    /*!*dihini*!*/
-    /*#photo9{*/
-    /*    width: 170px;*/
-    /*    height: 170px;*/
-    /*    margin-top: -550px;*/
-    /*    margin-left: 60px;*/
-    /*}*/
-    /*#photoSection{*/
-    /*    display: grid;*/
-    /*    grid-template-columns: repeat(3, 1fr);*/
-    /*    grid-template-rows: repeat(3, 1fr);*/
-    /*    padding: 0 100px 0 100px;*/
-    /*}*/
     #about-details{
         flex-direction: row;
         margin-top: -50px;
@@ -319,80 +245,6 @@ body {
         width: 60px;
         height: 60px;
     }
-    /*#photoSection {*/
-    /*    grid-template-columns: repeat(2, 1fr) !important;*/
-    /*}*/
-    /*#photo1 {*/
-    /*    grid-column: 1 / 3 !important;*/
-    /*    height: 350px;*/
-    /*}*/
-    /*!*all*!*/
-    /*#photo1{*/
-    /*    width: 230px;*/
-    /*    height: 200px;*/
-    /*    margin-left: 10px;*/
-    /*}*/
-    /*!*main*!*/
-    /*#photo2{*/
-    /*    width: 250px;*/
-    /*    height: 320px;*/
-    /*    margin-top: -260px;*/
-    /*}*/
-    /*!*birthday*!*/
-    /*#photo3{*/
-    /*    width: 230px;*/
-    /*    height: 200px;*/
-    /*    margin-top: -500px;*/
-    /*    margin-left: 10px;*/
-    /*}*/
-    /*!*park*!*/
-    /*#photo4{*/
-    /*    width: 200px;*/
-    /*    height: 200px;*/
-    /*    margin-top: 380px;*/
-    /*    margin-left: 30px;*/
-    /*}*/
-    /*!*batch*!*/
-    /*#photo5{*/
-    /*    width: 170px;*/
-    /*    height: 170px;*/
-    /*    margin-top: 180px;*/
-    /*    margin-left: 20px;*/
-    /*}*/
-    /*!*sithum*!*/
-    /*#photo6{*/
-    /*    width: 170px;*/
-    /*    height: 170px;*/
-    /*    margin-top: 180px;*/
-    /*    margin-left: 60px;*/
-    /*}*/
-    /*!*beach*!*/
-    /*#photo7{*/
-    /*    width: 170px;*/
-    /*    height: 170px;*/
-    /*    margin-top: -550px;*/
-    /*    margin-left: 20px;*/
-    /*}*/
-    /*!*dinshini*!*/
-    /*#photo8{*/
-    /*    width: 200px;*/
-    /*    height: 200px;*/
-    /*    margin-top: -200px;*/
-    /*    margin-left: 20px;*/
-    /*}*/
-    /*!*dihini*!*/
-    /*#photo9{*/
-    /*    width: 170px;*/
-    /*    height: 170px;*/
-    /*    margin-top: -550px;*/
-    /*    margin-left: 60px;*/
-    /*}*/
-    /*#photoSection{*/
-    /*    display: grid;*/
-    /*    grid-template-columns: repeat(3, 1fr);*/
-    /*    grid-template-rows: repeat(3, 1fr);*/
-    /*    padding: 0 100px 0 100px;*/
-    /*}*/
     #about-details{
         flex-direction: row;
         margin-top: -50px;
@@ -444,7 +296,7 @@ body {
 
 }
 /*phone*/
-@media all and (max-width: 800px) {
+@media all and (max-width: 800px) and (min-width: 601px) {
     .nav-item{
         opacity: 0;
         display: none;
@@ -581,72 +433,6 @@ body {
     .card{
         width: 100%;
     }
-    /*#photoSection {*/
-    /*    grid-template-columns: 1fr !important;*/
-    /*    padding: 0 20px;*/
-    /*}*/
-    /*#photo1 {*/
-    /*    grid-column: 1 / 2 !important;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*.photo {*/
-
-    /*    height: 250px;*/
-    /*}*/
-    /*#gallery{*/
-    /*    height: auto;*/
-    /*    padding: 50px 0;*/
-    /*}*/
-    /*!*all*!*/
-    /*#photo1{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*!*main*!*/
-    /*#photo2{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*!*birthday*!*/
-    /*#photo3{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*!*park*!*/
-    /*#photo4{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*!*batch*!*/
-    /*#photo5{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*!*sithum*!*/
-    /*#photo6{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*!*beach*!*/
-    /*#photo7{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*!*dinshini*!*/
-    /*#photo8{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*!*dihini*!*/
-    /*#photo9{*/
-    /*    width: 250px;*/
-    /*    height: 250px;*/
-    /*}*/
-    /*#photoSection{*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    gap: 15px;*/
-    /*}*/
     #footerSection {
         flex-direction: column;
         gap: 15px;
@@ -724,8 +510,16 @@ body {
 
         height: 450px;
     }
+}
 
-
+@media all and (max-width: 600px){
+    .nav-item{
+        opacity: 0;
+        display: none;
+    }
+    .menu-toggle > img{
+        opacity: 1;
+    }
 }
 
 /*/////////////////Nav Section/////////////////////*/
@@ -1269,162 +1063,6 @@ body {
 .photoSub:hover .photo-overlay > span {
     transform: translateY(0);
 }
-
-/*/////////////////////////////////////////////*/
-/*#gallery{*/
-/*    flex-direction: column;*/
-/*    margin-top: 50px;*/
-/*    height: auto;*/
-/*    align-items: center;*/
-/*}*/
-
-/*#photoSection {*/
-/*    gap: 20px !important;*/
-/*}*/
-
-/*!*all*!*/
-/*#photo1{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/photo7.jpeg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    margin-top: 100px;*/
-/*    border-radius: 5px;*/
-/*    grid-column: 2/3;*/
-/*    grid-row: 1/2;*/
-
-/*    border: 1px solid rgba(255, 255, 255, 0.1);*/
-/*    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*    filter: grayscale(40%);*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.photo:hover {*/
-/*    filter: grayscale(0%);*/
-/*    transform: scale(1.03);*/
-/*    border-color: #00D2FF;*/
-/*    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);*/
-/*    z-index: 10;*/
-/*}*/
-
-/*!*main*!*/
-/*#photo2{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/photo2.jpeg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    border-radius: 20px;*/
-/*    grid-column: 2/3;*/
-/*    grid-row: 2/3;*/
-/*}*/
-/*!*birthday*!*/
-/*#photo3{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/photo5.jpeg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    border-radius: 5px;*/
-/*    grid-column: 2/3;*/
-/*    grid-row: 3/4;*/
-/*}*/
-/*!*park*!*/
-/*#photo4{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/photo4.jpeg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    border-radius: 5px;*/
-/*    grid-column: 1/2;*/
-/*    grid-row: 1/2 ;*/
-/*}*/
-/*!*batch*!*/
-/*#photo5{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/batch.jpg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    border-radius: 5px;*/
-/*    grid-column: 3/4;*/
-/*    grid-row: 1/2;*/
-/*}*/
-/*!*sithum*!*/
-/*#photo6{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/photo6.jpg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    border-radius: 5px;*/
-/*    grid-column: 1/2;*/
-/*    grid-row: 1/2;*/
-/*}*/
-/*!*beach*!*/
-/*#photo7{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/photo1.jpeg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    border-radius: 5px;*/
-/*    grid-column: 3/4;*/
-/*    grid-row: 3/4;*/
-/*}*/
-/*!*dinshini*!*/
-/*#photo8{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/photo8.jpg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    border-radius: 5px;*/
-/*    grid-column: 3/4;*/
-/*    grid-row: 2/3;*/
-/*}*/
-/*!*dihini*!*/
-/*#photo9{*/
-/*    background-color: #00D2FF;*/
-/*    background-image: url("../MyPortfolio/assets/photo9.jpg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    z-index: 100;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    background-repeat: no-repeat;*/
-/*    border-radius: 5px;*/
-/*    grid-column: 1/2;*/
-/*    grid-row: 3/4;*/
-/*}*/
-
-
 
 /*/////////////////Footer Section/////////////////////*/
 #footer {
@@ -2414,4 +2052,380 @@ textarea {
 /*    margin-top: 20px;*/
 /*}*/
 
+/*/////////////////////photo 4n//////////////////////*/
+/*@media all and (max-width: 800px) {
+        /*#photoSection {*/
+/*    grid-template-columns: 1fr !important;*/
+/*    padding: 0 20px;*/
+/*}*/
+/*#photo1 {*/
+/*    grid-column: 1 / 2 !important;*/
+/*    height: 250px;*/
+/*}*/
+/*.photo {*/
 
+/*    height: 250px;*/
+/*}*/
+/*#gallery{*/
+/*    height: auto;*/
+/*    padding: 50px 0;*/
+/*}*/
+/*!*all*!*/
+/*#photo1{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*!*main*!*/
+/*#photo2{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*!*birthday*!*/
+/*#photo3{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*!*park*!*/
+/*#photo4{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*!*batch*!*/
+/*#photo5{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*!*sithum*!*/
+/*#photo6{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*!*beach*!*/
+/*#photo7{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*!*dinshini*!*/
+/*#photo8{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*!*dihini*!*/
+/*#photo9{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+/*#photoSection{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 15px;*/
+/*}*/
+
+/*//////////////////////////photo tab/////////////////////////////*/
+/*@media all and (min-width: 800px) and  (max-width: 1024px) {*/
+/*#photoSection {*/
+/*    grid-template-columns: repeat(2, 1fr) !important;*/
+/*}*/
+/*#photo1 {*/
+/*    grid-column: 1 / 3 !important;*/
+/*    height: 350px;*/
+/*}*/
+/*!*all*!*/
+/*#photo1{*/
+/*    width: 230px;*/
+/*    height: 200px;*/
+/*    margin-left: 10px;*/
+/*}*/
+/*!*main*!*/
+/*#photo2{*/
+/*    width: 250px;*/
+/*    height: 320px;*/
+/*    margin-top: -260px;*/
+/*}*/
+/*!*birthday*!*/
+/*#photo3{*/
+/*    width: 230px;*/
+/*    height: 200px;*/
+/*    margin-top: -500px;*/
+/*    margin-left: 10px;*/
+/*}*/
+/*!*park*!*/
+/*#photo4{*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    margin-top: 380px;*/
+/*    margin-left: 30px;*/
+/*}*/
+/*!*batch*!*/
+/*#photo5{*/
+/*    width: 170px;*/
+/*    height: 170px;*/
+/*    margin-top: 180px;*/
+/*    margin-left: 20px;*/
+/*}*/
+/*!*sithum*!*/
+/*#photo6{*/
+/*    width: 170px;*/
+/*    height: 170px;*/
+/*    margin-top: 180px;*/
+/*    margin-left: 60px;*/
+/*}*/
+/*!*beach*!*/
+/*#photo7{*/
+/*    width: 170px;*/
+/*    height: 170px;*/
+/*    margin-top: -550px;*/
+/*    margin-left: 20px;*/
+/*}*/
+/*!*dinshini*!*/
+/*#photo8{*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    margin-top: -200px;*/
+/*    margin-left: 20px;*/
+/*}*/
+/*!*dihini*!*/
+/*#photo9{*/
+/*    width: 170px;*/
+/*    height: 170px;*/
+/*    margin-top: -550px;*/
+/*    margin-left: 60px;*/
+/*}*/
+/*#photoSection{*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    grid-template-rows: repeat(3, 1fr);*/
+/*    padding: 0 100px 0 100px;*/
+/*}*/
+/*////////////////////////////////////photo lap///////////////////////////////*/
+/*@media all and (min-width: 1025px) {*/
+/*!*all*!*/
+/*#photo1{*/
+/*    width: 230px;*/
+/*    height: 200px;*/
+/*    margin-left: 10px;*/
+/*}*/
+/*!*main*!*/
+/*#photo2{*/
+/*    width: 250px;*/
+/*    height: 320px;*/
+/*    margin-top: -260px;*/
+/*}*/
+/*!*birthday*!*/
+/*#photo3{*/
+/*    width: 230px;*/
+/*    height: 200px;*/
+/*    margin-top: -500px;*/
+/*    margin-left: 10px;*/
+/*}*/
+/*!*park*!*/
+/*#photo4{*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    margin-top: 380px;*/
+/*    margin-left: 30px;*/
+/*}*/
+/*!*batch*!*/
+/*#photo5{*/
+/*    width: 170px;*/
+/*    height: 170px;*/
+/*    margin-top: 180px;*/
+/*    margin-left: 20px;*/
+/*}*/
+/*!*sithum*!*/
+/*#photo6{*/
+/*    width: 170px;*/
+/*    height: 170px;*/
+/*    margin-top: 180px;*/
+/*    margin-left: 60px;*/
+
+
+/*}*/
+/*!*beach*!*/
+/*#photo7{*/
+/*    width: 170px;*/
+/*    height: 170px;*/
+/*    margin-top: -550px;*/
+/*    margin-left: 20px;*/
+/*}*/
+/*!*dinshini*!*/
+/*#photo8{*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    margin-top: -200px;*/
+/*    margin-left: 20px;*/
+/*}*/
+/*!*dihini*!*/
+/*#photo9{*/
+/*    width: 170px;*/
+/*    height: 170px;*/
+/*    margin-top: -550px;*/
+/*    margin-left: 60px;*/
+/*}*/
+/*#photoSection{*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    grid-template-rows: repeat(3, 1fr);*/
+/*    padding: 0 100px 0 100px;*/
+/*}*/
+
+/*////////////////////////*/
+/*.buttonHome:hover{*/
+/*    width: 151px;*/
+/*    height: 41px;*/
+/*}*/
+/*}*/
+/*////////////gallery/////////////////////////*/
+/*/////////////////////////////////////////////*/
+/*#gallery{*/
+/*    flex-direction: column;*/
+/*    margin-top: 50px;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+/*}*/
+
+/*#photoSection {*/
+/*    gap: 20px !important;*/
+/*}*/
+
+/*!*all*!*/
+/*#photo1{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo7.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    margin-top: 100px;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 2/3;*/
+/*    grid-row: 1/2;*/
+
+/*    border: 1px solid rgba(255, 255, 255, 0.1);*/
+/*    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);*/
+/*    filter: grayscale(40%);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.photo:hover {*/
+/*    filter: grayscale(0%);*/
+/*    transform: scale(1.03);*/
+/*    border-color: #00D2FF;*/
+/*    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);*/
+/*    z-index: 10;*/
+/*}*/
+
+/*!*main*!*/
+/*#photo2{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo2.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 20px;*/
+/*    grid-column: 2/3;*/
+/*    grid-row: 2/3;*/
+/*}*/
+/*!*birthday*!*/
+/*#photo3{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo5.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 2/3;*/
+/*    grid-row: 3/4;*/
+/*}*/
+/*!*park*!*/
+/*#photo4{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo4.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 1/2;*/
+/*    grid-row: 1/2 ;*/
+/*}*/
+/*!*batch*!*/
+/*#photo5{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/batch.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 3/4;*/
+/*    grid-row: 1/2;*/
+/*}*/
+/*!*sithum*!*/
+/*#photo6{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo6.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 1/2;*/
+/*    grid-row: 1/2;*/
+/*}*/
+/*!*beach*!*/
+/*#photo7{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo1.jpeg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 3/4;*/
+/*    grid-row: 3/4;*/
+/*}*/
+/*!*dinshini*!*/
+/*#photo8{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo8.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 3/4;*/
+/*    grid-row: 2/3;*/
+/*}*/
+/*!*dihini*!*/
+/*#photo9{*/
+/*    background-color: #00D2FF;*/
+/*    background-image: url("../MyPortfolio/assets/photo9.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    z-index: 100;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    background-repeat: no-repeat;*/
+/*    border-radius: 5px;*/
+/*    grid-column: 1/2;*/
+/*    grid-row: 3/4;*/
+/*}*/
