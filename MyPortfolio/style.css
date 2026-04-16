@@ -538,6 +538,11 @@ body {
         justify-content: center;
         align-items: center;
     }
+    #textHome{
+        font-size: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
 }
 
 /*/////////////////Nav Section/////////////////////*/
