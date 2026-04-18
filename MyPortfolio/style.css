@@ -38,6 +38,18 @@ body {
     width: 35px;
     height: auto;
 }
+.topic{
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 900;
+    letter-spacing: -.03em;
+    margin-bottom: 14px;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+}
+.topic > span{
+    color: #00D2FF;
+}
 
 /*desktop*/
 @media all and (min-width: 1025px) {
@@ -910,7 +922,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #00061A;
     min-height: 100vh;
     height: auto;
 }
@@ -943,7 +954,7 @@ body {
     color: #dfdfdf;
     line-height: 1.8;
 }
-.about-description span {
+.about-description > span {
     color: #00D2FF;
     font-weight: bold;
 }
@@ -972,11 +983,14 @@ body {
     background: rgba(255, 255, 255, 0.03) !important;
     border: 1px solid
 }
-.topic{
+.card > .topic{
     color: white;
     font-weight: bold;
     text-shadow: 0 0 10px #00D2FF;
-    font-size: 25px;
+    font-size: 33px;
+}
+.card > .topic > span{
+    color: #00D2FF;
 }
 .buttonAP{
     width: 270px;
@@ -1047,21 +1061,21 @@ body {
     min-height: 100vh;
     /*height: 2000px;*/
     height: auto;
-    background: #00061A;
     margin-top: 0 !important;
     /*overflow: hidden;*/
 
 
 }
 #gallery > .topic{
-    font-size: 40px;
+    /*font-size: 40px;*/
     margin-bottom: 50px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+
+
 }
 #gallery > .topic > span {
     color: #00D2FF;
-    text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+
 }
 #photoSection{
     display: flex;
@@ -1594,14 +1608,14 @@ body {
     transform: scale(1.02);
 }
 #project-page > .topic{
-    font-size: 35px;
+    /*font-size: 35px;*/
     text-align: center;
     margin: 0;
 
 }
 #project-page > .topic >span{
     color: #00D2FF;
-    text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+    /*text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);*/
 }
 .projectPic{
     width: 100%;
@@ -1856,7 +1870,7 @@ textarea {
 #assignmentSection > .topic {
     padding: 20px 0;
     text-align: center;
-    font-size: clamp(30px, 8vw, 40px);
+    /*font-size: clamp(30px, 8vw, 40px);*/
 }
 #assignmentSection > .topic > span {
     color: #00D2FF;
