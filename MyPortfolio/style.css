@@ -497,27 +497,28 @@ body {
     }
     #photoSection{
 
-        gap: 25px;
+        gap: 10px;
 
     }
     .photo{
 
-        height: 230px;
+        height: 50px;
 
 
     }
     .photoSub{
 
-        height: 40px;
+        height: 30px;
 
     }
     #photo1{
-        width: 330px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
+        border-radius: 5px;
     }
     .photoSub:hover{
 
-        height: 450px;
+        height: 230px;
     }
 }
 
@@ -1089,7 +1090,7 @@ body {
 .photo{
     position: relative;
     /*height: 280px;*/
-    border-radius: 15px;
+    border-radius: 10px;
     background-size: cover;
     background-position: center;
     border: 1px solid rgba(0, 210, 255, 0.2);
@@ -1257,6 +1258,8 @@ body {
     min-width: 50%;
     flex-wrap: wrap;
     max-width: 600px;
+    color: #bec1cc;
+    font-family: "Acme", sans-serif;
 }
 #about-photo{
     aspect-ratio: 1/1;
