@@ -574,6 +574,68 @@ body {
         width: 110px;
         height: 27px;
     }
+    #about {
+        margin-top: 120px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 10px;
+    }
+    .about-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 280px;
+
+    }
+    .holographic-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .hologram-card {
+        width: 75px;
+        height: 75px;
+        font-size: 25px;
+    }
+    .fingerprint {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
+        opacity: 0.20;
+        pointer-events: none;
+    }
+    #finger-bg {
+        width: 450px;
+        height: 450px;
+        background-position: center;
+        background-size: contain;
+        filter: blur(1px) drop-shadow(0 0 10px #00D2FF);
+    }
+    .about-description {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+        font-size: 12.5px;
+        line-height: 1.8;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
+        margin-top: 0px;
+    }
+    .tech-card{
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 /*/////////////////Nav Section/////////////////////*/
@@ -1070,6 +1132,12 @@ body {
 #photo9{
     background-image: url("../MyPortfolio/assets/photo9.jpg");
 }
+#photo10{
+    background-image: url("../MyPortfolio/assets/photo10.jpg");
+}
+#photo11{
+    background-image: url("../MyPortfolio/assets/photo9.jpg");
+}
 .photo:hover {
     transform: scale(1.05);
     border-color: #00D2FF;
@@ -1550,13 +1618,10 @@ body {
     max-width: 500px;
 
 }
-
-
 .projectPic:hover{
     height: 20%;
 
 }
-
 #projectPic1{
     background-image: url("../MyPortfolio/assets/projectpic.png");
 }
@@ -1788,17 +1853,14 @@ textarea {
     overflow: hidden;
     padding: 60px 20px;
 }
-
 #assignmentSection > .topic {
     padding: 20px 0;
     text-align: center;
     font-size: clamp(30px, 8vw, 40px);
 }
-
 #assignmentSection > .topic > span {
     color: #00D2FF;
 }
-
 #MainCaseSection {
     gap: 30px;
     margin-top: 50px;
@@ -1824,14 +1886,12 @@ textarea {
     justify-content: center;
     align-items: center;
 }
-
 .c:hover {
     transform: translateY(-15px);
     border-color: #00D2FF;
     box-shadow: 0 0 40px rgba(0, 210, 255, 0.2);
     background: rgba(0, 210, 255, 0.05);
 }
-
 .caseBorder {
     border-radius: 50%;
     width: 160px;
@@ -1844,7 +1904,6 @@ textarea {
     justify-content: center;
     animation: spin 4000ms infinite linear;
 }
-
 .caseImg {
     border-radius: 50%;
     width: 130px;
@@ -1852,7 +1911,6 @@ textarea {
     background: linear-gradient(45deg, #00061A, #001533);
     border: 1px solid rgba(0, 210, 255, 0.3);
 }
-
 .caseButton {
     background-color: #00D2FF;
     color: #000;
@@ -1867,7 +1925,6 @@ textarea {
     transition: 0.3s;
     text-decoration: none;
 }
-
 .case {
     display: flex;
     flex-direction: column;
@@ -1875,7 +1932,6 @@ textarea {
     width: 100%;
     margin-top: 50px;
 }
-
 .caseTopic {
     font-size: 22px;
     text-decoration: underline;
@@ -1884,12 +1940,9 @@ textarea {
     margin: 40px 0;
     text-align: center;
 }
-
-#case02 > .caseTopic,
-#case02 > .caseSection {
+#case02 > .caseTopic, #case02 > .caseSection {
     margin-top: 0 !important;
 }
-
 .caseSection {
     display: grid;
     width: 100%;
@@ -1900,7 +1953,6 @@ textarea {
     justify-items: center;
     margin-top: 0;
 }
-
 .case01Card, .case02Card {
     display: flex;
     flex-direction: column;
@@ -1915,7 +1967,6 @@ textarea {
     border-radius: 20px;
     padding: 25px 20px;
 }
-
 .assignmentPicBorder, #assignmentPic2-7BorderBorder {
     border-radius: 50%;
     border: 1px solid #00D2FF;
@@ -1927,14 +1978,12 @@ textarea {
     overflow: hidden;
     animation: pulseCircle 3s infinite ease-in-out;
 }
-
 .buttonSec {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 100%;
 }
-
 .code, .view {
     width: 100%;
     height: 40px;
@@ -1950,7 +1999,6 @@ textarea {
     justify-content: center;
     align-items: center;
 }
-
 .code {
     background-color: #00D2FF;
     color: #000;
@@ -1959,7 +2007,6 @@ textarea {
     border: 1px solid #00D2FF;
     color: #00D2FF; background: transparent;
 }
-
 .code:hover {
     background-color: #04021f;
     color: #fff;
@@ -1967,9 +2014,6 @@ textarea {
 .view:hover {
     background-color: rgba(0, 210, 255, 0.1);
 }
-
-
-
 
 /*///////////////////////keyframes//////////////////////*/
 @keyframes contact-img {
@@ -2037,14 +2081,11 @@ textarea {
         transform: rotate(-360deg);
     }
 }
-
-
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
 }
-
 @keyframes pulseCircle {
     0% {
         box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.4); transform: scale(1);
