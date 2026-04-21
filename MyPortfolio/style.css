@@ -97,7 +97,11 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 0 5%;
         gap: 20px;
-        margin-top: -600px;
+        /*margin-top: -600px;*/
+        margin-top: 40px !important;
+    }
+    #project-page {
+        padding-top: 80px;
     }
     .project {
         max-width: 500px;
@@ -163,9 +167,10 @@
     }
     #home2{
         flex-direction: row;
-        justify-content: center;
         margin-top: 50px;
-        padding: 50px 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 40px;
     }
     #gdse{
         font-size: 15px;
@@ -182,10 +187,11 @@
     #robo-pic{
         width: 400px;
         height: 300px;
+        margin-top: 0;
     }
     #details{
-        margin-top: 30px;
-        margin-left: 100px;
+        margin-left: 0;
+        margin-top: 20px;
     }
     .buttonHome{
         width: 150px;
@@ -212,6 +218,7 @@
     #about-details{
         flex-direction: row;
         margin-top: -50px;
+        padding: 0 40px;
     }
     #about-detail-p{
         font-size: 30px;
@@ -241,14 +248,14 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 0 5%;
         gap: 10px;
-        margin-top: -850px;
+        margin-top: 40px !important;
     }
     .project {
         max-width: 350px;
     }
     #photoSection{
-
-        gap: 25px;
+        padding: 0 5%;
+        gap: 15px;
 
     }
     .photo{
@@ -269,6 +276,9 @@
     .photoSub:hover{
 
         height: 490px;
+    }
+    #contact-section {
+        padding: 100px 30px 50px;
     }
 
 }
@@ -305,12 +315,16 @@
         text-align: center;
         justify-content: center;
         height: auto;
-        padding: 90px 10px 20px 10px;
-        gap: 15px;
+        padding: 80px 20px 30px;
+        gap: 20px;
     }
     #home2{
         flex-direction: column;
-        margin-right: 70px;
+        align-items: center;
+        margin-right: 0;
+        padding: 20px;
+        gap: 15px;
+        margin-top: 20px;
     }
     #gdse{
         font-size: 13px;
@@ -323,20 +337,38 @@
     }
     #me{
         font-size: 1rem;
-        max-width: 300px;
+        max-width: 100%;
     }
     #robo-pic{
-        width: 100px;
-        height: 200px;
-        margin-right: 350px;
+        width: 120px;
+        height: auto;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    #robo-pic img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
     #details{
-        margin-left: 170px;
-        margin-top: 50px;
+        margin-left: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 340px;
+        width: 100%;
+    }
+    #hbutton {
+        justify-content: center;
     }
     .buttonHome{
         width: 125px;
         height: 35px;
+
+        min-height: 44px;
     }
     #about {
         margin-top: 100px;
@@ -393,7 +425,7 @@
         font-size: 14.5px;
         line-height: 1.8;
         text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
-        margin-top: 0px;
+        margin-top: 0;
     }
     .tech-card{
         width: 40px;
@@ -403,9 +435,7 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
-    }
-    .card{
-        width: 100%;
+
     }
     #footerSection {
         flex-direction: column;
@@ -424,11 +454,15 @@
         /*margin-bottom: 200px;*/
         width: auto;
         height: auto;
+
+        padding: 20px;
+        gap: 30px;
+        /*margin-top: 60px;*/
     }
     #about-photo {
-
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
+        min-width: unset;
     }
     #about-details-left {
         width: 100%;
@@ -458,34 +492,52 @@
         width: 100%;
         max-width: 250px;
     }
-    /*#professional-social{*/
-    /*    margin-top: 0px;*/
-    /*}*/
     .educationCard{
-        margin-left: 50px;
+        width: 90%;
+        max-width: 300px;
     }
     #project-section {
         grid-template-columns: repeat(1, 1fr);
-        padding: 0 20px;
         gap: 25px;
-        margin-top: -800px;
+        margin-top: 40px !important;
+        padding: 20px;
     }
     .project {
         max-width: 300px;
     }
     .caseSection {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 15px;
+        padding: 10px;
 
+    }
+    .case01Card, .case02Card {
+        max-width: 100%;
+    }
+    #assignmentSection {
+        padding: 80px 15px 40px;
+    }
+    #MainCaseSection {
+        flex-direction: column;
+        align-items: center;
     }
     .c{
-        width: 250px;
-        height: 320px;
         gap: 10px;
+        width: 260px;
+        height: 300px;
+    }
+    #gallery {
+        padding: 80px 0 40px;
     }
     #photoSection{
-
+        padding: 0 15px;
         gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
 
+    }
+    #subPhotoSection {
+        width: 100%;
     }
     .photo{
 
@@ -494,30 +546,46 @@
 
     }
     .photoSub{
-
-        height: 30px;
-
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
     }
     #photo1{
-        width: 250px;
-        height: 150px;
-        border-radius: 5px;
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
     }
     .photoSub:hover{
-
-        height: 230px;
+        height: 200px;
     }
+    .language{
+        font-size: 10px;
+
+    }
+    .caseButton, .code, .view {
+        min-height: 44px;
+    }
+    .submit {
+        min-height: 50px;
+    }
+    #nav-side {
+        display: none;
+    }
+
+
+
 
 }
 
 /*/////////////////////all/////////////////////////////////*/
-body {
+body,html {
     background: #00061A;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
     scroll-behavior: smooth;
+    max-width: 100%;
     overflow-x: hidden;
 }
 #nav-top {
@@ -563,6 +631,10 @@ body {
 }
 .topic > span{
     color: #00D2FF;
+}
+::selection {
+    background: rgba(0, 210, 255, 0.25);
+    color: #fff;
 }
 
 /*/////////////////Nav Section/////////////////////*/
@@ -675,8 +747,6 @@ body {
 
 }
 
-
-
 /*/////////////////Footer Section/////////////////////*/
 #footer {
     background: #04021f;
@@ -771,6 +841,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
+}
+#robo-pic img {
+    max-width: 100%;
+    height: auto;
 }
 #details {
     display: flex;
@@ -1188,7 +1262,7 @@ body {
 
 /*/////////////////About Section/////////////////////*/
 #about-details{
-    padding: 0 70px;
+    padding: 50px 70px;
     gap: 50px;
 
 }
@@ -1221,6 +1295,8 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+
 
 
 }
@@ -1295,10 +1371,11 @@ body {
     justify-content: center;
     gap: 40px;
     height: auto;
-    /*padding: 100px 0;*/
+    padding: 100px 70px;
+    width: auto;
 }
 .skills {
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -1424,18 +1501,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     width: 100%;
     overflow: hidden;
+    height: auto;
 }
 .holographic-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 30px;
-    width: 100%;
+    width: 80%;
     max-width: 800px;
     margin-top: 60px;
     justify-items: center;
+
 }
 .hologram-card {
     width: 90px;
@@ -1527,14 +1606,15 @@ body {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid #00D2FF;
     border-radius: 10%;
-    width: 300px;
+    /*width: 300px;*/
     height: 300px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /*align-items: center;*/
     justify-content: flex-start;
     padding: 20px;
+    width: auto;
+
 
 
 
@@ -1631,6 +1711,7 @@ body {
 }
 
 /*/////////////////Contact Section/////////////////////*/
+
 #contact-left{
     flex: 1;
     min-width: 320px;
@@ -1643,6 +1724,7 @@ body {
     flex-direction: column;
     gap: 25px;
     box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
+    width: auto;
 }
 #contact-pic-section{
     display: flex;
@@ -1725,10 +1807,12 @@ body {
     flex: 1.5;
     min-width: 350px;
     background: rgba(255, 255, 255, 0.02);
-    padding: 40px;
+    padding: 40px 50px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: left;
+    width: auto;
+
 }
 #contact-right > div:first-child {
     font-size: 2rem;
@@ -1754,6 +1838,7 @@ input, select, textarea {
     color: white;
     outline: none;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 input:focus, select:focus, textarea:focus {
     border-color: #00D2FF;
@@ -1769,6 +1854,7 @@ input:focus, select:focus, textarea:focus {
 textarea {
     resize: none;
     height: 120px;
+    width: 100%;
 }
 .submit {
     width: 100%;
@@ -1795,6 +1881,8 @@ textarea {
 #nameSection{
     gap: 10px;
 }
+
+
 
 /*////////////////////////////Assignment Section///////////////////////////////*/
 #assignmentSection {
