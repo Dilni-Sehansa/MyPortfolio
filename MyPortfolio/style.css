@@ -575,6 +575,7 @@ body,html {
     scroll-behavior: smooth;
     max-width: 100%;
     overflow-x: hidden;
+
 }
 #nav-top {
     position: fixed;
@@ -1489,7 +1490,7 @@ body,html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 50px 10px;
     width: 100%;
     overflow: hidden;
     height: auto;
