@@ -506,25 +506,13 @@
         max-width: 300px;
     }
     .caseSection {
-        grid-template-columns: 1fr 1fr !important;
-        gap: 15px;
-        padding: 10px;
+        grid-template-columns: 1fr !important;
 
     }
-    .case01Card, .case02Card {
-        max-width: 100%;
-    }
-    #assignmentSection {
-        padding: 80px 15px 40px;
-    }
-    #MainCaseSection {
-        flex-direction: column;
-        align-items: center;
-    }
     .c{
+        width: 250px;
+        height: 320px;
         gap: 10px;
-        width: 260px;
-        height: 300px;
     }
     #gallery {
         padding: 80px 0 40px;
@@ -562,8 +550,8 @@
         font-size: 10px;
 
     }
-    .caseButton, .code, .view {
-        min-height: 44px;
+    .card{
+        width: 70%;
     }
     .submit {
         min-height: 50px;
@@ -1885,6 +1873,7 @@ textarea {
 
 
 /*////////////////////////////Assignment Section///////////////////////////////*/
+
 #assignmentSection {
     display: flex;
     flex-direction: column;
