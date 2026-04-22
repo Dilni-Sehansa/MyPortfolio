@@ -130,6 +130,9 @@
 
         height: 500px;
     }
+    .card > .topic{
+        font-size: 33px;
+    }
 
 }
 /*tab*/
@@ -279,6 +282,9 @@
     }
     #contact-section {
         padding: 100px 30px 50px;
+    }
+    .card > .topic{
+        font-size: 30px;
     }
 
 }
@@ -435,7 +441,12 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
+        justify-content: center;
 
+    }
+    .card > .topic{
+        font-size: 20px;
+        text-align: center;
     }
     #footerSection {
         flex-direction: column;
@@ -559,9 +570,6 @@
     #nav-side {
         display: none;
     }
-
-
-
 
 }
 
@@ -1036,7 +1044,6 @@ body,html {
     color: white;
     font-weight: bold;
     text-shadow: 0 0 10px #00D2FF;
-    font-size: 33px;
 }
 .card > .topic > span{
     color: #00D2FF;
