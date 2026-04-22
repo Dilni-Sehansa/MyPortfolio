@@ -73,49 +73,100 @@
     </section>
 
     <section id="contact-right" class="contact">
+
         <div>Can you Send Msg</div>
-        <div>
-            <div id="nameSection">
-                <label>First Name</label>
-                <input type="text" placeholder="Dilni" id="firstNameField">
-            </div>
+
+        <form id="contactForm" action="https://formspree.io/f/xdaywyol" method="POST">
+
             <div>
-                <label>Last Name</label>
-                <input type="text" placeholder="Sehansa" id="lastNameField">
+                <div id="nameSection">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Dilni" id="firstNameField" name="firstName">
+                </div>
+
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Sehansa" id="lastNameField" name="lastName">
+                </div>
             </div>
-        </div>
 
-        <div>
-            <label>Email Address</label>
-            <input type="email" placeholder="xxx@gmail.com" id="emailField">
-        </div>
+            <div>
+                <label>Email Address</label>
+                <input type="email" placeholder="xxx@gmail.com" id="emailField" name="email">
+            </div>
 
-        <div>
-            <label>Phone Number</label>
-            <input type="tel" placeholder="07X XXX XXXX" id="numberField">
-        </div>
+            <div>
+                <label>Phone Number</label>
+                <input type="tel" placeholder="07X XXX XXXX" id="numberField" name="phone">
+            </div>
 
-        <div>
-            <label>Subject</label>
-            <select id="subjectField">
-                <option value="" disabled selected>Select a topic...</option>
-                <option>Freelance Project</option>
-                <option>Internship Opportunity</option>
-                <option>Collaboration</option>
-                <option>Other</option>
-            </select>
-        </div>
+            <div>
+                <label>Subject</label>
+                <select id="subjectField" name="subject">
+                    <option value="" disabled selected>Select a topic...</option>
+                    <option>Freelance Project</option>
+                    <option>Internship Opportunity</option>
+                    <option>Collaboration</option>
+                    <option>Other</option>
+                </select>
+            </div>
 
-        <div>
-            <label>Massage</label>
-            <textarea placeholder="your massage" id="msgField"></textarea>
-        </div>
+            <div>
+                <label>Message</label>
+                <textarea placeholder="your message" id="msgField" name="message"></textarea>
+            </div>
 
-        <button class="submit"><i class="fa-solid fa-location-arrow" style="color: rgb(0, 158, 219);"></i>Send Massage
-        <a href="https://wa.me/94742202426"></a></button>
+
+            <div id="successBox">
+                <div id="tick">
+                    ✔
+                </div>
+                <h2>Message Sent!</h2>
+                <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+            </div>
+
+            <button type="button" class="submit" onclick="sendMessage()">
+                <i class="fa-solid fa-location-arrow" style="color: rgb(0, 158, 219);"></i>
+                Send Message
+            </button>
+
+        </form>
 
     </section>
 
+    <script>
+        function sendMessage() {
+            const form = document.getElementById("contactForm");
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+
+                    document.getElementById("successBox").style.display = "block";
+
+                    let msg = "Hi, I am " + document.getElementById("firstNameField").value +
+                        " " + document.getElementById("lastNameField").value +
+                        "%0AEmail: " + document.getElementById("emailField").value +
+                        "%0APhone: " + document.getElementById("numberField").value +
+                        "%0AMessage: " + document.getElementById("msgField").value;
+
+                    window.open("https://wa.me/94742202426?text=" + msg, "_blank");
+
+                    form.reset();
+                } else {
+                    alert("Oops! There was a problem sending your message.");
+                }
+            }).catch(error => {
+                alert("Error: " + error);
+            });
+        }
+    </script>
 </section>
 
 <footer id="footer">
