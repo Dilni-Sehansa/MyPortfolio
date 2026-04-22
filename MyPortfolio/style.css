@@ -555,7 +555,7 @@
         border-radius: 10px;
     }
     .photoSub:hover{
-        height: 200px;
+        height: 300px;
     }
     .language{
         font-size: 10px;
@@ -1206,7 +1206,7 @@ body,html {
     background-image: url("../MyPortfolio/assets/photo10.jpg");
 }
 #photo11{
-    background-image: url("../MyPortfolio/assets/photo9.jpg");
+    background-image: url("../MyPortfolio/assets/daoset.jpeg");
 }
 .photo:hover {
     transform: scale(1.05);
