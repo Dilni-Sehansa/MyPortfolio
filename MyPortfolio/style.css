@@ -854,6 +854,7 @@ body,html {
     word-wrap: break-word;
     overflow-wrap: break-word;
     animation: rubberBand 1.6s infinite;
+    margin-top: 20px;
 
 }
 /*@keyframes swing {*/
