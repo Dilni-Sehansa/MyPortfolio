@@ -483,7 +483,6 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        text-align: center;
         margin-top: 100px;
         /*margin-bottom: 200px;*/
         width: auto;
@@ -500,6 +499,8 @@
     }
     #about-details-left {
         width: 100%;
+
+
     }
     #about-detail-main {
         font-size: 30px;
@@ -511,9 +512,9 @@
         bottom: 50px;
     }
     #about-detail-p {
-        font-size: 16px;
-        padding: 0 10px;
+        font-size: 14px;
         line-height: 1.5;
+        min-width: 400px;
     }
     #about-button {
         display: flex;
