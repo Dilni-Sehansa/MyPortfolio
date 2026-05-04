@@ -844,7 +844,6 @@ body,html {
 #textHome{
     color: white;
     font-weight: bold;
-    /*font-family: "Iosevka Charon", monospace;*/
     text-shadow: 0 0 10px #00D2FF;
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
@@ -852,7 +851,15 @@ body,html {
     letter-spacing: 2px;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    animation: swing 1.6s infinite;
 
+}
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
 }
 #robo-pic {
     background-size: contain;
