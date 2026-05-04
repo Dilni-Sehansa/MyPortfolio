@@ -786,18 +786,19 @@ body,html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
     width: 100%;
     flex-wrap: wrap;
     padding: 10px 0;
 }
 .footer-Details {
-    font-size: 14px;
+    font-size: 12px;
     color: #dfdfdf;
     font-weight: 300;
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 10px;
 }
 .footer-bottom {
     width: 100%;
