@@ -354,16 +354,19 @@
     }
     #gdse{
         font-size: 13px;
+        min-width: 200px;
     }
     #name2{
         font-size: 20px;
     }
     .name{
         font-size: 20px;
+        min-width: 200px;
     }
     #me{
         font-size: 1rem;
         max-width: 100%;
+        min-width: 300px;
     }
     #robo-pic{
         width: 120px;
@@ -832,6 +835,7 @@ body,html {
     display: flex;
 
 }
+
 #main-pic-border{
     background:conic-gradient(white 50%, #00D2FF 50%);
     border-radius: 50%;
