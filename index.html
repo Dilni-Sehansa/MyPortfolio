@@ -228,6 +228,14 @@
             navLinks.classList.remove('active');
         });
     });
+
+    const dots = document.querySelectorAll('.nav-dot');
+    dots.forEach(dot => {
+        dot.addEventListener('click', function () {
+            dots.forEach(d => d.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
 </script>
 
 
