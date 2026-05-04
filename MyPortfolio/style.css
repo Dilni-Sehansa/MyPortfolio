@@ -1618,12 +1618,11 @@ body,html {
 
 /*/////////////////Project Section/////////////////////*/
 #project-page{
-    margin-top: 150px;
+    margin-top: 100px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     height: auto;
-    gap: 10px;
     overflow: hidden;
 
 }
@@ -1632,8 +1631,8 @@ body,html {
     height: auto;
     justify-items: center;
     align-items: center;
-    padding: 50px 50px;
-    margin-top: 30px;
+    padding: 0 50px 50px 50px;
+
 
 
 }
@@ -1650,9 +1649,6 @@ body,html {
     padding: 20px;
     width: auto;
 
-
-
-
 }
 .project:hover {
     transform: scale(1.03);
@@ -1664,7 +1660,6 @@ body,html {
     transform: scale(1.02);
 }
 #project-page > .topic{
-    /*font-size: 35px;*/
     text-align: center;
     margin: 0;
 
@@ -1837,17 +1832,17 @@ body,html {
 .contact-information {
     font-size: 0.95rem;
     font-weight: 500;
+
 }
 #contact-right {
     flex: 1.5;
     min-width: 350px;
     background: rgba(255, 255, 255, 0.02);
-    padding: 40px 50px;
+    padding: 40px 10px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: left;
     width: auto;
-
 }
 #contact-right > div:first-child {
     font-size: 2rem;
@@ -1874,6 +1869,8 @@ input, select, textarea {
     outline: none;
     transition: 0.3s;
     box-sizing: border-box;
+
+
 }
 input:focus, select:focus, textarea:focus {
     border-color: #00D2FF;
