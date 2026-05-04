@@ -851,16 +851,17 @@ body,html {
     letter-spacing: 2px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    animation: swing 1.6s infinite;
+    animation: rubberBand 1.6s infinite;
 
 }
-@keyframes swing {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(3deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-3deg); }
-    100% { transform: rotate(0deg); }
-}
+/*@keyframes swing {*/
+/*    0% { transform: rotate(0deg); }*/
+/*    25% { transform: rotate(3deg); }*/
+/*    50% { transform: rotate(0deg); }*/
+/*    75% { transform: rotate(-3deg); }*/
+/*    100% { transform: rotate(0deg); }*/
+/*}*/
+
 #robo-pic {
     background-size: contain;
     background-repeat: no-repeat;
@@ -887,6 +888,7 @@ body,html {
 }
 #gdse{
     color: #00D2FF;
+    animation: flash 1.6s infinite;
 }
 #name2{
     color: #00D2FF;
@@ -2175,6 +2177,34 @@ textarea {
         box-shadow: 0 0 0 15px rgba(0, 210, 255, 0); transform: scale(1.05);
     }100% {
         box-shadow: 0 0 0 0 rgba(0, 210, 255, 0); transform: scale(1);
+    }
+}
+@keyframes rubberBand {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1.08, 0.92);
+    }
+    40% {
+        transform: scale(0.92, 1.08);
+    }
+    55% {
+        transform: scale(1.05, 0.95);
+    }
+    70% {
+        transform: scale(0.98, 1.02);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
     }
 }
 
