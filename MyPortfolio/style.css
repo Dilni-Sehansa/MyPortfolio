@@ -868,22 +868,24 @@ body,html {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
-    width: 60%;
+    margin: auto;
 }
 
 #details {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    max-width: 500px
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+
 }
 #home2 {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
-    gap: 15px;
-    padding: 50px;
+    gap: 5px;
+    padding: 50px 150px;
 
 }
 #gdse{
